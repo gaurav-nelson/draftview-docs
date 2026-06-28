@@ -1,11 +1,11 @@
 ---
-title: What DraftView is
+title: Introduction to DraftView
 description: DraftView is the human review layer for AI-generated documentation pull requests. It runs on top of GitHub so a qualified person can review, edit, and sign off on doc changes before they merge.
 tag: Overview
 readtime: 4 min read
 ---
 
-# What DraftView is
+# Introduction to DraftView
 
 DraftView is the human review layer for AI-generated documentation pull requests. It runs on top of GitHub. When an AI agent or a person opens a PR that changes documentation, DraftView is where someone qualified reads it, edits it, comments on it, and signs off before it merges. It also shows whether the agent's next commit actually addressed the feedback.
 

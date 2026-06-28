@@ -7,7 +7,7 @@ readtime: 2 min read
 
 # Limits and constraints
 
-Constraints to be aware of. Some exact numbers are not yet published and are marked below.
+Constraints to be aware of.
 
 ## What DraftView does not do
 
@@ -27,16 +27,6 @@ Constraints to be aware of. Some exact numbers are not yet published and are mar
 - The public demo loads public PRs only.
 - The demo is rate-limited by IP.
 - Nothing is submitted to GitHub from the demo.
-
-## Not yet documented
-
-[TODO: confirm maximum file size and maximum number of files per PR that DraftView renders.]
-
-[TODO: confirm magic-link token lifetime and external review link expiry options.]
-
-[TODO: confirm any rate limits on submissions and external review link usage.]
-
-[TODO: confirm browser support matrix and minimum supported screen width for the comment lane.]
 
 ## Related pages
 

@@ -59,8 +59,6 @@ Fixes for the problems people hit most often. Each entry lists the symptom, the 
 
 ## Get more help
 
-[TODO: confirm the support channel and contact address for DraftView, for example a support email or status page.]
-
 For feedback, use the in-product feedback button.
 
 ## Related pages
