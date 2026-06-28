@@ -1,0 +1,14 @@
+{
+  "name": "draftview-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "docslit dev",
+    "build": "docslit build",
+    "validate": "docslit validate"
+  },
+  "devDependencies": {
+    "docslit": "^0.1.9",
+    "esbuild": "0.28.1"
+  }
+}

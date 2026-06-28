@@ -1,0 +1,85 @@
+{
+  "url": "https://docs.draftview.app",
+  "name": "DraftView",
+  "description": "Review documentation pull requests visually and send suggestions back to GitHub. Docs for evaluating, onboarding, and getting work done with DraftView.",
+  "editUrl": "https://www.draftview.app/edit?url=https://github.com/gaurav-nelson/draftview-docs/blob/main/docs",
+  "sidebar": [
+    {
+      "group": "Overview",
+      "pages": [
+        "overview/introduction",
+        "overview/who-its-for",
+        "overview/how-it-works"
+      ]
+    },
+    {
+      "group": "Get started",
+      "pages": [
+        "get-started/prerequisites",
+        "get-started/try-without-an-account",
+        "get-started/review-your-first-pr",
+        "get-started/sign-in"
+      ]
+    },
+    {
+      "group": "Common workflows",
+      "pages": [
+        "workflows/suggest-edits",
+        "workflows/comment-on-a-pr",
+        "workflows/invite-an-external-reviewer",
+        "workflows/edit-this-page",
+        "workflows/review-ai-generated-doc-prs"
+      ]
+    },
+    {
+      "group": "Send changes to GitHub",
+      "pages": [
+        "send-to-github/how-suggestions-reach-github",
+        "send-to-github/push-reviewer-feedback",
+        "send-to-github/submit-an-edit-as-a-pr"
+      ]
+    },
+    {
+      "group": "Collaboration",
+      "pages": [
+        "collaboration/set-up-your-team",
+        "collaboration/roles-and-permissions",
+        "collaboration/sign-off-and-oversight"
+      ]
+    },
+    {
+      "group": "Migration",
+      "pages": [
+        "migration/from-github-pr-review",
+        "migration/from-google-docs",
+        "migration/from-word-track-changes"
+      ]
+    },
+    {
+      "group": "Reference",
+      "pages": [
+        "reference/supported-file-formats",
+        "reference/link-formats",
+        "reference/org-roles",
+        "reference/pr-lifecycle-states",
+        "reference/limits"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/common-issues"
+      ]
+    }
+  ],
+  "versions": {
+    "default": "0.1",
+    "list": [
+      {
+        "version": "0.1",
+        "branch": "main",
+        "tag": "Latest"
+      }
+    ]
+  }
+}
