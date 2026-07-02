@@ -1,6 +1,7 @@
 {
   "url": "https://docs.draftview.app",
   "name": "DraftView",
+  "logo": "logo.png",
   "description": "Review documentation pull requests visually and send suggestions back to GitHub. Docs for evaluating, onboarding, and getting work done with DraftView.",
   "editUrl": "https://www.draftview.app/edit?url=https://github.com/gaurav-nelson/draftview-docs/blob/main/docs",
   "sidebar": [
@@ -81,5 +82,6 @@
         "tag": "Latest"
       }
     ]
-  }
+  },
+  "theme": "./brand-theme.json"
 }

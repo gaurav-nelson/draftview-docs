@@ -8,7 +8,7 @@
     "validate": "docslit validate"
   },
   "devDependencies": {
-    "docslit": "^0.1.9",
+    "docslit": "^0.1.10",
     "esbuild": "0.28.1"
   }
 }
