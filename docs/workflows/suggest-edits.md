@@ -1,77 +1,57 @@
 ---
 title: Suggest edits in the visual editor
-description: Edit a documentation PR as formatted prose and have your changes sent back to GitHub as suggested changes the author can accept in one click.
-tag: Common workflows
-readtime: 5 min read
+description: Edit docs in the visual canvas and submit suggestions to GitHub.
+tag: Workflows
+readtime: 4 min read
 ---
 
 # Suggest edits in the visual editor
 
-This page covers the core review act: changing the wording of a documentation PR and sending those changes to GitHub. Use it once you can open a PR in DraftView and want to make edits that the author can apply.
+Use this workflow when you want to propose exact wording changes, not only comments.
 
-## When to use this
+## Before you start
 
-- You are reviewing a doc PR and want to fix wording, not just comment on it.
-- You want your changes to land in the PR, not in a separate message.
-- A non-technical reviewer needs to edit prose without touching Markdown.
-
-## Prerequisites
-
-- A PR open in the DraftView review surface. See [Review your first pull request](../get-started/review-your-first-pr).
-- For direct submission to GitHub, a GitHub account with access to comment on the PR. Reviewers without GitHub submit a pending review instead.
-
-## How editing works
-
-You edit the rendered document, not the raw source. DraftView keeps the original version and tracks each block you change. When you submit, it converts your changes into discrete suggested changes, mapping your edits back to the right lines in the raw file. The author sees normal GitHub suggestions.
-
-The editor supports Markdown, MDX, and AsciiDoc. An AsciiDoc file round-trips back to AsciiDoc, not Markdown, so your edits keep the original syntax.
+- Open the target PR in DraftView.
+- Confirm you have edit permission on that queue item.
 
 ## Steps
 
 <wc-steps>
-<wc-step title="Find what changed">
+<wc-step title="Open the changed file">
 
-Use the fold toggle to collapse unchanged sections so you can focus on the new content. Changed blocks are marked in the gutter.
+Use the file list to move to the section you want to edit.
 
 </wc-step>
 <wc-step title="Edit the text">
 
-Click into the prose and edit it. Rewrite a sentence, fix a term, reorder a list. Use the toolbar for structure such as headings, code blocks, and tables. For raw control, switch to the source view.
+Edit directly in the rendered content. Keep each change focused so authors can apply it quickly.
 
 </wc-step>
 <wc-step title="Review your changes">
 
-Open the submit toolbar. It lists your edits as separate chunks with a short summary of each, so you can check exactly what will go to GitHub.
+Open the submit panel and review the chunks DraftView prepared.
 
 </wc-step>
 <wc-step title="Submit">
 
-Submit the review. DraftView posts each chunk as a GitHub suggested change on the PR. If you added comments, they post as review comments.
+Submit your review. DraftView posts suggestions and comments to the PR.
 
 </wc-step>
 </wc-steps>
 
-## Result
+## What happens on submit
 
-The PR has your edits as suggested changes. The author opens GitHub, clicks to accept each one, and the change is applied to the branch. Nothing was retyped and the source of truth stayed in GitHub.
+- GitHub-linked reviewers post directly to GitHub.
+- Magic-link reviewers create pending team feedback.
+- A GitHub-linked teammate can verify and push pending feedback.
 
-## Edit AsciiDoc and multi-file docs
+## Notes for AsciiDoc and includes
 
-AsciiDoc files often pull in other files with include directives. DraftView shows an include as a block with an "Edit this file" action, so you can open and edit the included file in its own session. Edits to each file submit against that file.
-
-## Common mistakes
-
-- **Changing structure the format cannot express.** If you build something the source format does not support, the serializer may not produce a clean suggestion. Prefer edits that map to normal prose, lists, tables, and code blocks.
-- **Large rewrites as one suggestion.** A suggestion that replaces a whole section is harder for the author to accept and reason about. Smaller, focused edits apply more cleanly.
-- **No GitHub account.** Your edits become a pending review for a teammate to push. See [Push reviewer feedback to a pull request](../send-to-github/push-reviewer-feedback).
-
-## Next steps
-
-- Add context to your edits in [Comment on a pull request](comment-on-a-pr).
-- Understand the GitHub side in [How suggestions reach GitHub](../send-to-github/how-suggestions-reach-github).
+DraftView preserves source format on submit. AsciiDoc edits remain AsciiDoc. If a file includes other files, open and edit each included file directly.
 
 ## Related pages
 
 - [Comment on a pull request](comment-on-a-pr)
+- [Push teammate feedback to GitHub](../send-to-github/push-reviewer-feedback)
 - [Supported file formats](../reference/supported-file-formats)
 - [How suggestions reach GitHub](../send-to-github/how-suggestions-reach-github)

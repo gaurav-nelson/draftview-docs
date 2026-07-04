@@ -1,76 +1,56 @@
 ---
-title: Replace "Edit this page" with DraftView
-description: Point your documentation site's "Edit this page" link at DraftView so readers can edit in a visual editor and open a pull request without knowing Git.
-tag: Common workflows
-readtime: 5 min read
+title: Replace Edit this page with DraftView
+description: Route Edit this page links through DraftView for visual guest editing and GitHub PR creation.
+tag: Workflows
+readtime: 4 min read
 ---
 
-# Replace "Edit this page" with DraftView
+# Replace Edit this page with DraftView
 
-Most documentation sites have an "Edit this page" link that sends readers to the raw file on GitHub. That works for contributors who know Git. It loses everyone else. Point the link at DraftView instead, and a reader can edit the page in a visual editor and open a pull request without touching Markdown or the GitHub UI.
+Use this integration when you want contributors to edit docs visually before opening a PR.
 
-## When to use this
+## What contributors experience
 
-- Your docs site is built from Markdown, MDX, or AsciiDoc in a GitHub repo.
-- You want readers and non-technical contributors to suggest fixes.
-- Your generator supports a configurable edit URL (Docusaurus, VitePress, MkDocs, and similar).
+- They click Edit this page from your docs site.
+- DraftView opens with the target file loaded.
+- They edit visually.
+- DraftView guides GitHub OAuth, fork, commit, and PR creation.
 
-## Prerequisites
+## Integration URL pattern
 
-- A documentation site generator that lets you set the edit link per page.
-- The GitHub repo, branch, and file path for each page, which your generator already knows.
-
-## How it works
-
-DraftView accepts a GitHub blob URL as a query parameter:
+Link to DraftView with the source file URL in `url`:
 
 ```text
-https://draftview.app/edit?url=https://github.com/your-org/your-repo/blob/main/docs/intro.md
+https://www.draftview.app/edit?url=https://github.com/owner/repo/blob/main/docs/page.md
 ```
 
-A reader opens that URL, edits the rendered page with no login, and submits. On submit, DraftView asks them to authorize GitHub, forks the repo if needed, commits the change, and opens a pull request. The change then enters your normal review flow, including DraftView review if the repo is connected.
-
-## Steps
+## Setup steps
 
 <wc-steps>
-<wc-step title="Build the edit URL">
+<wc-step title="Find your current Edit this page template">
 
-Construct the DraftView edit URL from each page's GitHub blob URL. The pattern is:
-
-```text
-https://draftview.app/edit?url=<github-blob-url>
-```
+Locate the template where your docs site builds Edit this page links.
 
 </wc-step>
-<wc-step title="Set it in your generator">
+<wc-step title="Wrap the existing GitHub file URL">
 
-Configure your generator's edit-link option to produce that URL. For Docusaurus, set `editUrl` to the DraftView prefix plus the file path. The integration guide at `https://draftview.app/edit-this-page` shows the exact config for common generators.
+Keep your existing GitHub file URL generation, then wrap it with the DraftView URL pattern.
 
 </wc-step>
-<wc-step title="Test one page">
+<wc-step title="Test one page end to end">
 
-Open a page on your live site, click the edit link, and confirm DraftView loads the right file. Make a small edit and submit to confirm the PR opens against your repo.
+Open a page, click Edit this page, edit, and confirm DraftView can open a PR.
 
 </wc-step>
 </wc-steps>
 
-## Result
+## Notes
 
-Every page on your docs site has an edit link that opens a visual editor. A reader who spots a typo can fix it and open a PR in a couple of minutes, with no Git knowledge. You review the PR as usual.
-
-## Common mistakes
-
-- **Wrong branch in the blob URL.** The URL must point at the branch your generator builds from, usually `main`. A stale branch edits the wrong content.
-- **Private repo with anonymous readers.** A reader can only open a PR against a repo they can fork or access. For private repos, contributors need the right GitHub access.
-- **Unsupported file format.** Only Markdown, MDX, and AsciiDoc render in the editor. See [Supported file formats](../reference/supported-file-formats).
-
-## Next steps
-
-- See the per-generator setup at `https://draftview.app/edit-this-page`.
-- Understand the PR that gets opened in [Submit an edit as a pull request](../send-to-github/submit-an-edit-as-a-pr).
+- DraftView works with Markdown, MDX, and AsciiDoc.
+- AsciiDoc include targets can be edited in their own sessions.
 
 ## Related pages
 
 - [Submit an edit as a pull request](../send-to-github/submit-an-edit-as-a-pr)
 - [Supported file formats](../reference/supported-file-formats)
-- [Move from a Git edit workflow](../migration/from-github-pr-review)
+- [Link formats](../reference/link-formats)

@@ -1,40 +1,36 @@
 ---
 title: Pull request lifecycle states
-description: The states a documentation PR moves through in the DraftView queue, from ingested to merged, and what each one means.
+description: Learn what each queue lifecycle state means and what action to take next.
 tag: Reference
-readtime: 3 min read
+readtime: 4 min read
 ---
 
 # Pull request lifecycle states
 
-Every PR in the queue carries a lifecycle state. The state tells you what needs a human, what is waiting on the agent, and what is done. Transitions are controlled, so a PR moves through valid states rather than jumping around. This page describes the states and the order they follow.
+Each queue item in DraftView has a lifecycle state.
 
-## States
+## State reference
 
-| State | Meaning | What to do |
-|---|---|---|
-| Ingested | The PR was picked up and added to the queue | Assign or open it for review |
-| In review | A human is reviewing it | Read, comment, and suggest edits |
-| Changes requested | Reviewers asked for changes | Wait for the author or agent to respond |
-| Waiting on AI | The agent is expected to push a follow-up | Watch for the new commit |
-| Addressed | A follow-up commit touched a commented region | Verify the change with the before and after view |
-| Signed off | An approver recorded a sign-off | Merge in GitHub once CI is green |
-| Ready to merge | Sign-off recorded and CI green | A person merges in GitHub |
-| Merged | The PR merged in GitHub | Done. The oversight record is retained |
+| State label | System state | Meaning | Typical next action |
+|---|---|---|---|
+| New | ingested | DraftView ingested the PR | Open and start review |
+| In review | in_review | A reviewer is actively reviewing | Comment, edit, submit |
+| Changes requested | changes_requested | Review feedback is recorded | Wait for author or agent update |
+| Waiting on AI | waiting_on_ai | Team expects an AI follow-up | Monitor for revision |
+| Addressed | addressed | New commit touched feedback region | Verify and continue review |
+| Stalled | stalled | No response in expected window | Nudge or reassign |
+| Signed off | signed_off | Maintainer or admin approved | Wait for CI or merge gate |
+| Ready to merge | ready_to_merge | Signed off with green CI | Merge in GitHub |
+| Merged | merged | PR merged in GitHub | Done |
 
-[Assumption: these state names and order approximate the lifecycle described in the project (ingested through ready-to-merge to merged). Confirm the exact set and names against the product.]
+## Key behavior notes
 
-## How states change
-
-- New doc PRs in connected repos enter as ingested.
-- Opening and working a PR moves it into review.
-- Reviewer feedback can move it to changes requested or waiting on AI.
-- A follow-up commit that touches a commented region moves it to addressed. A commit that changes something unrelated does not. See [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs).
-- An approver's sign-off, with CI green, leads to ready to merge.
-- A human merge in GitHub is the terminal state. DraftView never merges.
+- DraftView can move any non-merged state to Merged when GitHub merge is detected.
+- Addressed is region-based, not commit-message based.
+- Signed off does not merge the PR automatically.
 
 ## Related pages
 
 - [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
-- [Sign-off and oversight records](../collaboration/sign-off-and-oversight)
-- [How DraftView works](../overview/how-it-works)
+- [Sign-off and oversight](../collaboration/sign-off-and-oversight)
+- [Limits and constraints](limits)

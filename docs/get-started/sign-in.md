@@ -1,77 +1,56 @@
 ---
 title: Sign in to DraftView
-description: The two ways to sign in to DraftView, GitHub OAuth and email magic link, and which one to use depending on your role.
+description: Sign in with magic link or GitHub and start the AI docs review workflow.
 tag: Get started
 readtime: 3 min read
 ---
 
 # Sign in to DraftView
 
-DraftView has two sign-in methods. Which one you use depends on whether you have a GitHub account and what you need to do.
+DraftView supports two sign-in paths.
 
-## When to use this
+- Magic link by email
+- GitHub OAuth
 
-- You received a team invitation and need to get in.
-- You want to know whether you need a GitHub account.
-- You are deciding how to invite reviewers who do not use GitHub.
+## When to use each method
 
-## The two methods
+- Use magic link when you only need to review and do not need GitHub access.
+- Use GitHub sign-in when you want to load private PRs directly or push feedback to GitHub.
 
-| Method | Use it when | What it lets you do |
-|---|---|---|
-| GitHub OAuth | You have a GitHub account and access to the repos | Load PRs, submit suggested changes under your own account, push teammates' pending reviews |
-| Email magic link | You do not have a GitHub account, or you were invited by email | Review and edit in connected repos, submit a pending review for a teammate to push |
-
-Both methods create the same session. A magic-link member and a GitHub member can be on the same team and review the same PRs. The difference is who can push suggestions directly to GitHub.
-
-## Sign in with GitHub
+## Steps
 
 <wc-steps>
-<wc-step title="Start the OAuth flow">
+<wc-step title="Open the sign-in page">
 
-Go to `https://draftview.app` and choose to sign in with GitHub.
+Go to `https://www.draftview.app/login`.
 
 </wc-step>
-<wc-step title="Authorize">
+<wc-step title="Choose your sign-in method">
 
-Approve the OAuth request. DraftView reads only the PRs you already have access to. It does not gain access to anything you cannot already see on GitHub.
+Enter your email for a one-time magic link, or choose Sign in with GitHub.
+
+</wc-step>
+<wc-step title="Complete sign-in">
+
+After sign-in, DraftView sends you to your dashboard or the specific PR route you opened.
 
 </wc-step>
 </wc-steps>
 
-## Sign in with an email magic link
+## First-time onboarding behavior
 
-<wc-steps>
-<wc-step title="Request a link">
+If you sign in with GitHub for the first time, DraftView can ask what you want to do first:
 
-Go to `https://draftview.app/login` and enter your email address. If you have a team invitation, use the address it was sent to.
+- Set up a team queue
+- Review a PR yourself
 
-</wc-step>
-<wc-step title="Open the email">
+DraftView uses your choice to prioritize the dashboard experience.
 
-DraftView emails a single-use link. Open it to sign in. The link expires after a short time, so request a new one if it lapses.
-
-</wc-step>
-</wc-steps>
-
-[Assumption: magic-link tokens are single-use and expire after 15 minutes, matching the magic-link implementation described in the project.]
-
-## Result
-
-You have an active session. GitHub members can load and submit PRs directly. Magic-link members can review in their team's connected repos.
-
-## Common mistakes
-
-- **Magic link expired.** Request a new one. Links are single-use and short-lived.
-- **Wrong email address.** Use the address the invitation was sent to, or the membership will not match.
-- **Expecting to push suggestions as a magic-link member.** GitHub requires a real account for suggested changes. Submit your review and a GitHub-linked teammate pushes it. See [Push reviewer feedback to a pull request](../send-to-github/push-reviewer-feedback).
-
-## Next steps
-
-- Do a review in [Review your first pull request](review-your-first-pr).
-- Invite people who do not use GitHub in [Invite an external reviewer](../workflows/invite-an-external-reviewer).
+If your goal is AI docs oversight at team scale, choose the team queue path.
 
 ## Related pages
 
-- [Before you begin](prerequisites)
-- [Roles and permissions](../collaboration/roles-and-permissions)
+- [Review your first pull request](review-your-first-pr)
+- [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
+- [Set up your team](../collaboration/set-up-your-team)
+- [Try DraftView without an account](try-without-an-account)

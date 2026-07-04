@@ -1,72 +1,58 @@
 ---
-title: Link and URL formats
-description: The DraftView URLs for reviewing a PR, editing a page, the public demo, and signing in, with the placeholders each one takes.
+title: Link formats
+description: Use the correct DraftView URLs for review routes, demo routes, and integrations.
 tag: Reference
-readtime: 2 min read
+readtime: 3 min read
 ---
 
-# Link and URL formats
+# Link formats
 
-The URL patterns DraftView uses. Replace the placeholders in angle brackets with your own values.
+Use these URL formats when linking to DraftView workflows.
 
-## Review a pull request
+## Core routes
 
-Open a specific PR in the review surface:
-
-```text
-https://draftview.app/github.com/<owner>/<repo>/pull/<pr-number>
-```
-
-Example:
+### Review a GitHub PR directly
 
 ```text
-https://draftview.app/github.com/your-org/your-repo/pull/142
+https://www.draftview.app/github.com/<owner>/<repo>/pull/<pr-number>
 ```
 
-## Edit a page ("Edit this page")
-
-Open a single file for editing, using its GitHub blob URL:
+### Open the dashboard
 
 ```text
-https://draftview.app/edit?url=<github-blob-url>
+https://www.draftview.app/dashboard
 ```
 
-Example:
+### Sign in
 
 ```text
-https://draftview.app/edit?url=https://github.com/your-org/your-repo/blob/main/docs/intro.md
+https://www.draftview.app/login
 ```
 
-See [Replace "Edit this page" with DraftView](../workflows/edit-this-page).
-
-## Public demo
-
-Try DraftView on any public PR, no login:
+### Try the public demo
 
 ```text
-https://draftview.app/try
+https://www.draftview.app/try
 ```
 
-## Sign in by email
+## Integration routes
 
-Request an email magic link:
+### Edit this page integration
 
 ```text
-https://draftview.app/login
+https://www.draftview.app/edit?url=https://github.com/<owner>/<repo>/blob/<branch-or-sha>/<path>
 ```
 
-## External review link
-
-A reviewer-facing link uses a token DraftView generates. You do not build this by hand. Create it from a loaded PR. See [Invite an external reviewer](../workflows/invite-an-external-reviewer).
+### External review route
 
 ```text
-https://draftview.app/review/external/<token>
+https://www.draftview.app/review/external/<token>
 ```
 
-[Assumption: these URL patterns match the app's routes as described in the project structure. Confirm the production hostname and any path changes.]
+Create external links from DraftView. Do not handcraft token URLs.
 
 ## Related pages
 
 - [Review your first pull request](../get-started/review-your-first-pr)
-- [Replace "Edit this page" with DraftView](../workflows/edit-this-page)
-- [Try DraftView without an account](../get-started/try-without-an-account)
+- [Replace Edit this page with DraftView](../workflows/edit-this-page)
+- [Invite an external reviewer](../workflows/invite-an-external-reviewer)

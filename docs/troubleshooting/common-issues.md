@@ -1,68 +1,95 @@
 ---
 title: Troubleshooting common issues
-description: Fixes for the problems people hit most often with DraftView, including missing files, sign-in trouble, and feedback that did not reach GitHub.
+description: Fix common DraftView issues across demo, queue, external links, and GitHub handoff.
 tag: Troubleshooting
-readtime: 4 min read
+readtime: 5 min read
 ---
 
 # Troubleshooting common issues
 
-Fixes for the problems people hit most often. Each entry lists the symptom, the likely cause, and what to do.
+## I cannot load a PR in demo mode
 
-## A PR shows no files to review
+Possible causes:
 
-**Likely cause:** the PR does not change any supported documentation files, or the files are in an unsupported format.
+- The PR is private
+- The URL is invalid
+- You hit demo rate limits
 
-**Fix:** confirm the PR touches Markdown, MDX, or AsciiDoc files. Code, config, and data files do not render. See [Supported file formats](../reference/supported-file-formats).
+Fix:
 
-## The demo will not load my PR
+- Use a public PR for demo
+- Check URL format
+- Sign in for private PR workflows
 
-**Likely cause:** the PR is private, or you hit the demo rate limit.
+## The queue is empty after setup
 
-**Fix:** the demo loads public PRs only. To review a private PR, sign in and load it from your dashboard. If loading fails repeatedly, wait and retry, since the demo limits requests by IP. See [Review your first pull request](../get-started/review-your-first-pr).
+Possible causes:
 
-## My magic link does not work
+- App is not connected to the expected repositories
+- No open doc PRs match supported formats
 
-**Likely cause:** the link expired or was already used.
+Fix:
 
-**Fix:** magic links are single-use and short-lived. Request a new one from `https://draftview.app/login`, and use the email address your invitation was sent to. See [Sign in to DraftView](../get-started/sign-in).
+- Verify repository selection in org setup
+- Open or update a doc PR in a connected repo
 
-## I reviewed, but nothing appeared on the PR
+## A magic-link reviewer submitted feedback, but nothing appears in GitHub
 
-**Likely cause:** you signed in by email magic link, so your review is a pending review waiting for a teammate to push.
+Cause:
 
-**Fix:** ask a GitHub-linked teammate to verify and push your review. This keeps every GitHub suggestion attributed to a real account. See [Push reviewer feedback to a pull request](../send-to-github/push-reviewer-feedback).
+- Feedback is pending and needs verify-and-push
 
-## I cannot submit suggested changes
+Fix:
 
-**Likely cause:** your GitHub account does not have access to comment on that PR.
+- Ask a GitHub-linked teammate to push pending feedback
 
-**Fix:** confirm you have the GitHub access the repo requires. If you do not, route the review through a teammate who does, or join the team and have them push your feedback.
+## I cannot sign off
 
-## The queue is empty after I connected the App
+Possible causes:
 
-**Likely cause:** the connected repos have no recent open doc PRs, or the App was not given access to the right repos.
+- Your role is below Maintainer
+- Free plan active reviewer limit was reached
 
-**Fix:** check that the GitHub App can see the repositories you expected, and that those repos have open documentation PRs. DraftView backfills recent open doc PRs at connect time. See [Set up your team](../collaboration/set-up-your-team).
+Fix:
 
-## My AsciiDoc edits came back as Markdown
+- Ask an admin to adjust role or item permissions
+- Upgrade plan or wait for next monthly period
 
-**Likely cause:** this should not happen. DraftView serializes AsciiDoc back to AsciiDoc.
+## External review link says expired or full
 
-**Fix:** if you see an AsciiDoc edit serialized as Markdown, treat it as a bug and report it. Include the file and the edit. See the support note below.
+Cause:
 
-## An agent pushed a commit but my comment is still open
+- Link passed expiry date or max submissions
 
-**Likely cause:** the commit did not touch the region your comment covers, so DraftView did not mark the feedback addressed.
+Fix:
 
-**Fix:** open the before and after view for your comment to see what actually changed. If the agent fixed the wrong place, reply on the thread and ask again. See [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs).
+- Create a new external review link for a new round
 
-## Get more help
+## External reviewer says comments disappeared
 
-For feedback, use the in-product feedback button.
+Cause:
+
+- Reviewer reopened a different link token, or link was revoked
+
+Fix:
+
+- Confirm link token
+- Check if owner revoked link
+- Use link dashboard to manage active links
+
+## A new commit landed, but state did not move to Addressed
+
+Cause:
+
+- Commit did not touch the commented region
+
+Fix:
+
+- Reopen review and verify changed regions
+- Leave a follow-up comment with exact expected changes
 
 ## Related pages
 
-- [Before you begin](../get-started/prerequisites)
-- [Sign in to DraftView](../get-started/sign-in)
-- [Limits and constraints](../reference/limits)
+- [Pull request lifecycle states](../reference/pr-lifecycle-states)
+- [Push teammate feedback to GitHub](../send-to-github/push-reviewer-feedback)
+- [Invite an external reviewer](../workflows/invite-an-external-reviewer)

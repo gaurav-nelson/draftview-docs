@@ -1,68 +1,63 @@
 ---
 title: Try DraftView without an account
-description: See the DraftView review experience on any public GitHub pull request in about a minute, with no signup and no install.
+description: Test the human review layer for AI-generated docs on any public PR with no sign-in.
 tag: Get started
-readtime: 2 min read
+readtime: 3 min read
 ---
 
 # Try DraftView without an account
 
-Use the public demo to see how DraftView renders a documentation PR before you commit to anything. Pick a public PR you already understand so you can judge the experience against something familiar.
+Use the public demo to test the core DraftView use case on public GitHub pull requests.
 
-## When to use this
+## What you can do in the demo
 
-- You are evaluating DraftView and do not want to sign in yet.
-- You want to show a teammate what review looks like.
-- You want to check how a specific public PR renders.
+- Load a public PR
+- Read changed docs in the visual review surface
+- Add comments and suggested edits in the demo experience
+- Simulate the human checkpoint before merge
 
-## Prerequisites
+## What the demo does not do
 
-- A public GitHub pull request URL that changes documentation files.
+- It does not load private repositories.
+- It does not post feedback to GitHub.
+- It rate-limits requests by IP.
 
 ## Steps
 
 <wc-steps>
-<wc-step title="Open the demo">
+<wc-step title="Open the demo page">
 
-Go to `https://draftview.app/try`.
-
-A default pull request loads so you can see the surface right away.
+Go to `https://www.draftview.app/try`.
 
 </wc-step>
-<wc-step title="Load your own PR">
+<wc-step title="Paste a public PR URL">
 
-Paste a public GitHub PR URL, for example:
+Use a URL like:
 
 ```text
-https://github.com/your-org/your-repo/pull/142
+https://github.com/owner/repo/pull/123
 ```
 
-DraftView fetches the documentation files in that PR and renders them.
+</wc-step>
+<wc-step title="Review the rendered docs">
+
+Read the document view, then test comments and suggested edits.
 
 </wc-step>
-<wc-step title="Read and interact">
+<wc-step title="Continue with full review">
 
-Read the rendered pages, expand changed sections, and try the editor. The demo is read-only for sending anything back to GitHub. Nothing is submitted to the PR.
+When you are ready to submit real feedback, sign in and load the same PR in your account.
 
 </wc-step>
 </wc-steps>
 
-## Result
-
-You see the PR as formatted prose with its changes marked, the same surface a reviewer uses. No data is written back to GitHub from the demo.
-
-## Common mistakes
-
-- **Private PR URL.** The demo only loads public PRs. To review a private PR, sign in. See [Review your first pull request](review-your-first-pr).
-- **A PR with no doc files.** If the PR only changes code or config, there is nothing for DraftView to render. Pick a PR that touches Markdown, MDX, or AsciiDoc.
-- **Rate limiting.** The demo limits requests by IP. If loading fails after several tries, wait a moment and retry.
-
 ## Next steps
 
-- Review a PR you have access to in [Review your first pull request](review-your-first-pr).
-- Understand the full workflow in [How DraftView works](../overview/how-it-works).
+- [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
+- [Sign in to DraftView](sign-in)
+- [Review your first pull request](review-your-first-pr)
 
 ## Related pages
 
-- [Review your first pull request](review-your-first-pr)
-- [Supported file formats](../reference/supported-file-formats)
+- [Link formats](../reference/link-formats)
+- [Troubleshooting common issues](../troubleshooting/common-issues)

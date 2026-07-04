@@ -1,57 +1,62 @@
 ---
 title: Before you begin
-description: What you need before you start using DraftView, depending on whether you are evaluating it, reviewing as a guest, or setting it up for a team.
+description: Choose your AI docs review path and confirm the prerequisites for that workflow.
 tag: Get started
 readtime: 3 min read
 ---
 
 # Before you begin
 
-What you need depends on what you are trying to do. Find your case below.
+Choose your goal, then confirm the prerequisites for that path.
 
-## To try DraftView on a public PR
+## Run the main use case: review AI docs PRs as a team
 
-Nothing. Open the [public demo](try-without-an-account), paste a public GitHub PR URL, and review it. No account, no install.
+- A GitHub account with permission to install the DraftView GitHub App
+- Repositories where AI tools or teammates open docs PRs
+- Reviewers you want to invite, including non-GitHub reviewers
 
-## To review a single PR you have access to
+Start here: [Set up your team](../collaboration/set-up-your-team), then run [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs).
 
-- A GitHub account.
-- Read access to the repository that holds the PR.
+## Try quickly with no setup
 
-Sign in with GitHub, paste the PR URL, and review. See [Review your first pull request](review-your-first-pr).
+You need only a browser and a public GitHub PR URL.
 
-## To review as an invited team member
+Start here: [Try DraftView without an account](try-without-an-account).
 
-- An email invitation from a team that already uses DraftView.
-- Nothing else. You do not need a GitHub account.
+## Review one PR yourself
 
-Open the invitation, sign in with the email magic link, and review. See [Sign in to DraftView](sign-in).
+- A GitHub account
+- Access to the repository that contains the PR
 
-## To set up DraftView for a team
+Start here: [Review your first pull request](review-your-first-pr).
 
-- A GitHub account with admin rights on the repositories you want to connect.
-- Permission to install a GitHub App on your organization or on those repos.
-- The list of repos whose documentation PRs you want in the queue.
+## Review as an invited teammate
 
-A 14-day trial starts when you connect the App. No card is required. See [Set up your team](../collaboration/set-up-your-team).
+- An invite from an existing DraftView org
+- Access to the invited email inbox
 
-[Assumption: connecting the GitHub App requires GitHub admin or owner permission on the target org or repositories, per standard GitHub App install rules.]
+You can sign in with a magic link, no GitHub account required.
 
-## Supported content
+Start here: [Sign in to DraftView](sign-in).
 
-DraftView reviews documentation files in a pull request. Supported formats are Markdown, MDX, and AsciiDoc, including DocsLit components. Files in other formats in the same PR are ignored for review. See [Supported file formats](../reference/supported-file-formats).
+## Set up a team queue
 
-## A working browser
+- A GitHub account with permission to install the DraftView GitHub App
+- Repositories that contain documentation pull requests
 
-Use a current version of a desktop browser. The review surface is built for a wide screen. On a narrow screen, the comment lane moves to a bottom sheet, which works but is tighter.
+DraftView starts a 14-day trial when you connect the app.
 
-## Next steps
+Start here: [Set up your team](../collaboration/set-up-your-team).
 
-- Evaluate with no setup in [Try DraftView without an account](try-without-an-account).
-- Do a real review in [Review your first pull request](review-your-first-pr).
+## Content and format support
+
+DraftView reviews documentation files, including Markdown, MDX, and AsciiDoc.
+
+See [Supported file formats](../reference/supported-file-formats).
 
 ## Related pages
 
 - [Sign in to DraftView](sign-in)
-- [Supported file formats](../reference/supported-file-formats)
-- [Limits](../reference/limits)
+- [Review your first pull request](review-your-first-pr)
+- [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
+- [Limits and constraints](../reference/limits)

@@ -1,35 +1,54 @@
 ---
 title: Limits and constraints
-description: Known constraints to keep in mind when using DraftView, including what it does not do and where exact limits are not yet documented.
+description: Understand plan limits, external-link limits, and workflow boundaries in DraftView.
 tag: Reference
-readtime: 2 min read
+readtime: 4 min read
 ---
 
 # Limits and constraints
 
-Constraints to be aware of.
+This page lists the limits that affect user workflows.
 
-## What DraftView does not do
+## Product boundaries
 
-- It does not merge pull requests. A person merges in GitHub.
-- It does not host or publish your documentation.
-- It does not review code, config, or data files.
-- It does not store the canonical copy of your content. GitHub does.
+- DraftView does not merge pull requests.
+- DraftView does not host docs sites.
+- DraftView does not replace GitHub as the source of truth.
 
-## Account and access constraints
+## Free plan limits
 
-- Submitting suggested changes to GitHub requires a GitHub account with access to comment on the PR.
-- Reviewers without GitHub can review, but a GitHub-linked teammate must push their feedback.
-- The "Edit this page" flow opens a real PR, so the editor needs a GitHub account to author it.
+- Active reviewers per month: 2
+- Queue repositories: 2
 
-## Demo constraints
+When a free org reaches the active reviewer limit for the month, new reviewers cannot perform gated review actions until the next period or upgrade.
 
-- The public demo loads public PRs only.
-- The demo is rate-limited by IP.
-- Nothing is submitted to GitHub from the demo.
+## Trial and paid tiers
+
+- Trial length: 14 days, starts when you connect the GitHub App
+- Team and Governance remove free-plan reviewer and queue caps
+- Governance adds audit export and oversight report surfaces
+
+## External review link limits
+
+- Active links per repository: 10
+- Max submissions per link: 1 to 10
+- Expiration choices: 3, 7, 14, 30 days
+
+External links always review a frozen snapshot of the PR.
+
+## Demo limits
+
+- Demo only loads public PRs
+- Demo is rate-limited by IP
+- Demo does not post feedback to GitHub
+
+## Identity and push limits
+
+- Posting suggestions to GitHub requires a GitHub identity with PR access
+- Magic-link reviewers can review, but a GitHub-linked teammate must verify and push
 
 ## Related pages
 
-- [Supported file formats](supported-file-formats)
-- [Before you begin](../get-started/prerequisites)
-- [Troubleshooting common issues](../troubleshooting/common-issues)
+- [Push teammate feedback to GitHub](../send-to-github/push-reviewer-feedback)
+- [Invite an external reviewer](../workflows/invite-an-external-reviewer)
+- [Pull request lifecycle states](pr-lifecycle-states)

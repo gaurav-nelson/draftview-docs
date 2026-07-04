@@ -1,33 +1,39 @@
 ---
 title: Team roles
-description: Quick lookup of the four DraftView team roles and the actions each one can perform.
+description: Quick reference for DraftView org roles and item-level permission caps.
 tag: Reference
 readtime: 2 min read
 ---
 
 # Team roles
 
-A scannable reference for the four team roles. For guidance on choosing roles, see [Roles and permissions](../collaboration/roles-and-permissions).
+Use this table as a quick lookup for org-level role capabilities.
 
-## Roles at a glance
+| Role | View | Comment | Edit | Curate queue | Sign off | Manage org |
+|---|---|---|---|---|---|---|
+| Viewer | Yes | No | No | No | No | No |
+| Commenter | Yes | Yes | No | No | No | No |
+| Editor | Yes | Yes | Yes | No | No | No |
+| Maintainer | Yes | Yes | Yes | Yes | Yes | No |
+| Admin | Yes | Yes | Yes | Yes | Yes | Yes |
 
-| Role | Review and comment | Sign off | Manage members | Billing and connections |
-|---|---|---|---|---|
-| Owner | Yes | Yes | Yes | Yes |
-| Approver | Yes | Yes | No | No |
-| Reviewer | Yes | No | No | No |
-| Viewer | Read-only | No | No | No |
+## Item caps
 
-[Assumption: the role set is owner, approver, reviewer, and viewer, and sign-off is limited to owner and approver. Confirm exact capabilities against the product.]
+Queue items can be capped at:
 
-## Notes
+- View only
+- Comment only
+- Edit
 
-- A team has at least one owner.
-- Reviewers and viewers can be magic-link members with no GitHub account.
-- A magic-link member's feedback is pushed to GitHub by a GitHub-linked teammate. See [Push reviewer feedback to a pull request](../send-to-github/push-reviewer-feedback).
-- Billing counts active reviewers, not invited or viewing members.
+Effective capability is the lower of role and item cap.
+
+## Legacy mapping
+
+- Owner -> Admin
+- Approver -> Maintainer
+- Reviewer -> Editor
 
 ## Related pages
 
 - [Roles and permissions](../collaboration/roles-and-permissions)
-- [Set up your team](../collaboration/set-up-your-team)
+- [Sign-off and oversight](../collaboration/sign-off-and-oversight)

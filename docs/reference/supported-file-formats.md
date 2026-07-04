@@ -1,43 +1,41 @@
 ---
 title: Supported file formats
-description: The documentation file formats and extensions DraftView renders for review, plus how component syntaxes are handled.
+description: See which documentation formats DraftView can render, edit, and send back to GitHub.
 tag: Reference
-readtime: 2 min read
+readtime: 3 min read
 ---
 
 # Supported file formats
 
-DraftView renders documentation files in a pull request. Files that are not in a supported format are ignored for review. This page lists what is supported.
+DraftView reviews documentation files in pull requests.
 
 ## Supported extensions
 
 | Format | Extensions |
 |---|---|
-| Markdown | `.md`, `.markdown`, `.mdown` |
-| MDX | `.mdx` |
-| AsciiDoc | `.adoc`, `.asciidoc`, `.ad`, `.asc` |
+| Markdown | .md, .markdown, .mdown |
+| MDX | .mdx |
+| AsciiDoc | .adoc, .asciidoc, .ad, .asc |
 
-## Component syntaxes
+## Component support
 
-DraftView recognizes component-style content inside these files:
+DraftView supports common docs component syntax in supported files, including MDX components and DocsLit `wc-*` components.
 
-- **MDX components** in PascalCase, such as `<Note>` or `<Card>`.
-- **DocsLit components** in the `wc-` form, such as `<wc-callout>` or `<wc-steps>`, and their PascalCase aliases.
+## Round-trip behavior
 
-Recognized components render with their structure preserved and round-trip back to the source. Unmapped components fall back to a labeled placeholder that keeps the inner content, so nothing is dropped.
+DraftView keeps source format on submit.
 
-## Format fidelity on submit
+- Markdown edits return as Markdown.
+- MDX edits return as MDX.
+- AsciiDoc edits return as AsciiDoc.
 
-DraftView serializes edits back to the file's original format. Markdown returns as Markdown. AsciiDoc returns as AsciiDoc, not Markdown. Component tags round-trip as written. See [How suggestions reach GitHub](../send-to-github/how-suggestions-reach-github).
+## Not supported
 
-## What is not supported
-
-- Code, configuration, and data files. DraftView reviews documentation, not source.
-- Binary files and images are not edited as prose.
-- Word, PDF, and other non-Git formats. The content must be a file in a GitHub PR.
+- Code and config files for prose editing
+- Binary documents and image formats as editable prose
 
 ## Related pages
 
 - [Suggest edits in the visual editor](../workflows/suggest-edits)
 - [How suggestions reach GitHub](../send-to-github/how-suggestions-reach-github)
-- [Limits](limits)
+- [Limits and constraints](limits)
