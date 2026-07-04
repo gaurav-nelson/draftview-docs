@@ -13,6 +13,16 @@ const LLMS_DIRECTIVE_HTML = [
 
 const LLMS_DIRECTIVE_MD = "<!-- llms.txt: /llms.txt -->";
 
+async function readDocslitConfig() {
+  if (!(await exists(docslitConfigPath))) return null;
+  try {
+    const raw = await fs.readFile(docslitConfigPath, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
 async function exists(p) {
   try {
     await fs.access(p);
@@ -50,14 +60,57 @@ async function listFilesRecursive(root, extension) {
 }
 
 async function readDefaultVersion() {
-  if (!(await exists(docslitConfigPath))) return null;
-  try {
-    const raw = await fs.readFile(docslitConfigPath, "utf8");
-    const cfg = JSON.parse(raw);
-    return cfg?.versions?.default ?? null;
-  } catch {
-    return null;
+  const cfg = await readDocslitConfig();
+  return cfg?.versions?.default ?? null;
+}
+
+function toPublicAssetPath(inputPath) {
+  if (!inputPath || typeof inputPath !== "string") return null;
+  const normalized = inputPath.replace(/\\/g, "/").trim();
+  if (!normalized) return null;
+  return `/${path.posix.basename(normalized)}`;
+}
+
+async function detectFaviconHref() {
+  const cfg = await readDocslitConfig();
+  const fromConfigLogo = toPublicAssetPath(cfg?.logo);
+
+  if (fromConfigLogo && (await exists(path.join(distDir, fromConfigLogo.slice(1))))) {
+    return fromConfigLogo;
   }
+
+  if (await exists(path.join(distDir, "logo.png"))) {
+    return "/logo.png";
+  }
+
+  return null;
+}
+
+function faviconTypeForHref(href) {
+  if (!href) return null;
+  const lower = href.toLowerCase();
+  if (lower.endsWith(".svg")) return "image/svg+xml";
+  if (lower.endsWith(".png")) return "image/png";
+  if (lower.endsWith(".ico")) return "image/x-icon";
+  return null;
+}
+
+function applyFaviconFromLogo(html, faviconHref) {
+  if (!faviconHref) return { html, changed: false };
+
+  const mimeType = faviconTypeForHref(faviconHref);
+  const iconTypeAttr = mimeType ? ` type=\"${mimeType}\"` : "";
+  const faviconBlock = [
+    `<link rel=\"icon\"${iconTypeAttr} href=\"${faviconHref}\">`,
+    `<link rel=\"apple-touch-icon\" href=\"${faviconHref}\">`,
+  ].join("\n  ");
+
+  let next = html;
+  next = next.replace(/\s*<link[^>]*rel=["'][^"']*icon[^"']*["'][^>]*>\s*/gi, "\n");
+  next = next.replace(/\s*<link[^>]*rel=["']apple-touch-icon["'][^>]*>\s*/gi, "\n");
+  next = next.replace(/<\/head>/i, `  ${faviconBlock}\n</head>`);
+
+  return { html: next, changed: next !== html };
 }
 
 async function detectVersionDir() {
@@ -135,8 +188,10 @@ async function main() {
   let injectedHtml = 0;
   let injectedMd = 0;
   let copiedUnversionedMd = 0;
+  let updatedFavicons = 0;
 
   const versionName = path.basename(versionDir);
+  const faviconHref = await detectFaviconHref();
   const llmsInVersion = path.join(versionDir, "llms.txt");
   const llmsFullInVersion = path.join(versionDir, "llms-full.txt");
 
@@ -161,16 +216,24 @@ async function main() {
   const htmlFiles = await listFilesRecursive(distDir, ".html");
   for (const filePath of htmlFiles) {
     const html = await fs.readFile(filePath, "utf8");
-    if (html.includes("/llms.txt")) continue;
+    let nextHtml = html;
 
-    const withDirective = html.replace(
-      /<\/head>/i,
-      `  ${LLMS_DIRECTIVE_HTML}\n</head>`
-    );
+    const faviconResult = applyFaviconFromLogo(nextHtml, faviconHref);
+    nextHtml = faviconResult.html;
+    if (faviconResult.changed) {
+      updatedFavicons += 1;
+    }
 
-    if (withDirective !== html) {
-      await fs.writeFile(filePath, withDirective, "utf8");
+    if (!nextHtml.includes("/llms.txt")) {
+      nextHtml = nextHtml.replace(
+        /<\/head>/i,
+        `  ${LLMS_DIRECTIVE_HTML}\n</head>`
+      );
       injectedHtml += 1;
+    }
+
+    if (nextHtml !== html) {
+      await fs.writeFile(filePath, nextHtml, "utf8");
     }
   }
 
@@ -191,7 +254,7 @@ async function main() {
   }
 
   console.log(
-    `[postbuild-ai-readiness] version=${versionName} copiedLlms=${copiedLlms} copiedUnversionedMd=${copiedUnversionedMd} injectedHtml=${injectedHtml} injectedMd=${injectedMd}`
+    `[postbuild-ai-readiness] version=${versionName} copiedLlms=${copiedLlms} copiedUnversionedMd=${copiedUnversionedMd} injectedHtml=${injectedHtml} injectedMd=${injectedMd} updatedFavicons=${updatedFavicons}`
   );
 }
 
