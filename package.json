@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "docslit dev",
     "build": "docslit build",
+    "postbuild": "node scripts/postbuild-ai-readiness.mjs",
     "validate": "docslit validate"
   },
   "devDependencies": {
