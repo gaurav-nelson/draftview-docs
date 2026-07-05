@@ -27,7 +27,7 @@ Use the public demo to test the core DraftView use case on public GitHub pull re
 <wc-steps>
 <wc-step title="Open the demo page">
 
-Go to `https://www.draftview.app/try`.
+Go to [https://www.draftview.app/try](https://www.draftview.app/try).
 
 </wc-step>
 <wc-step title="Paste a public PR URL">

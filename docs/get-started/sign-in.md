@@ -22,7 +22,7 @@ DraftView supports two sign-in paths.
 <wc-steps>
 <wc-step title="Open the sign-in page">
 
-Go to `https://www.draftview.app/login`.
+Go to [https://www.draftview.app/login](https://www.draftview.app/login).
 
 </wc-step>
 <wc-step title="Choose your sign-in method">

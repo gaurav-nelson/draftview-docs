@@ -26,7 +26,7 @@ Set up your org queue once, then review doc PRs from a shared inbox.
 <wc-steps>
 <wc-step title="Sign in and choose team setup">
 
-Sign in, then choose the team setup path from onboarding or dashboard navigation.
+Sign in at [https://www.draftview.app/login](https://www.draftview.app/login), then choose the team setup path from onboarding or [dashboard navigation](https://www.draftview.app/dashboard).
 
 </wc-step>
 <wc-step title="Connect the DraftView GitHub App">

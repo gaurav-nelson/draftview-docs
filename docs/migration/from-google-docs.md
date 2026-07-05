@@ -31,3 +31,4 @@ If a stakeholder does not use GitHub, share an external review link and then ver
 - [Invite an external reviewer](../workflows/invite-an-external-reviewer)
 - [Push teammate feedback to GitHub](../send-to-github/push-reviewer-feedback)
 - [Set up your team](../collaboration/set-up-your-team)
+- [Visit the dashboard to get started](https://www.draftview.app/dashboard)

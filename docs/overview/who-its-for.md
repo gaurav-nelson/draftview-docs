@@ -47,6 +47,7 @@ These teams need to answer one question with evidence: "Can you prove a qualifie
 ## Related pages
 
 - [Introduction to DraftView](introduction)
+- [See how DraftView compares](https://www.draftview.app/compare)
 - [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
 - [Set up your team](../collaboration/set-up-your-team)
 - [Move from GitHub PR review](../migration/from-github-pr-review)

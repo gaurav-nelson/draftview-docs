@@ -48,6 +48,12 @@ DraftView starts a 14-day trial when you connect the app.
 
 Start here: [Set up your team](../collaboration/set-up-your-team).
 
+## Ready to start?
+
+- [Try without an account](https://www.draftview.app/try)
+- [Sign in to your account](https://www.draftview.app/login)
+- [Go to the dashboard](https://www.draftview.app/dashboard)
+
 ## Content and format support
 
 DraftView reviews documentation files, including Markdown, MDX, and AsciiDoc.

@@ -32,6 +32,7 @@ DraftView does not replace GitHub. Your repository remains the source of truth, 
 - Run the main use case in [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs).
 - Set up the team queue in [Set up your team](../collaboration/set-up-your-team).
 - Try the experience with no login in [Try DraftView without an account](../get-started/try-without-an-account).
+- Access the [dashboard](https://www.draftview.app/dashboard) to start reviewing.
 
 ## Related pages
 

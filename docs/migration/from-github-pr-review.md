@@ -33,3 +33,4 @@ Use this migration path if your team already reviews in GitHub and wants better 
 - [Set up your team](../collaboration/set-up-your-team)
 - [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
 - [How suggestions reach GitHub](../send-to-github/how-suggestions-reach-github)
+- [Visit the dashboard to get started](https://www.draftview.app/dashboard)

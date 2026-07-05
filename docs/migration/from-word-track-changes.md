@@ -34,3 +34,4 @@ Use this migration path when your team still reviews docs through exported Word 
 - [Review your first pull request](../get-started/review-your-first-pr)
 - [Sign-off and oversight](../collaboration/sign-off-and-oversight)
 - [Move from GitHub PR review](from-github-pr-review)
+- [Visit the dashboard to get started](https://www.draftview.app/dashboard)
