@@ -148,6 +148,58 @@ function posixPathFromFile(filePath) {
   return filePath.split(path.sep).join("/");
 }
 
+async function generateSitemap(htmlFiles) {
+  const baseUrl = "https://docs.draftview.app";
+  const urls = [];
+
+  for (const filePath of htmlFiles) {
+    try {
+      const stat = await fs.stat(filePath);
+      const lastModDate = stat.mtime.toISOString().split("T")[0];
+
+      let urlPath = posixPathFromFile(path.relative(distDir, filePath));
+
+      // Convert index.html files to directory paths
+      if (urlPath.endsWith("index.html")) {
+        urlPath = urlPath.slice(0, -10); // Remove "index.html"
+      }
+
+      // Skip certain paths
+      if (urlPath.startsWith("_") || urlPath.startsWith(".")) continue;
+
+      urls.push({
+        loc: `${baseUrl}/${urlPath}`.replace(/\/+/g, "/").replace("https:/", "https://"),
+        lastmod: lastModDate,
+        changefreq: "weekly",
+        priority: urlPath === "" ? "1.0" : "0.8",
+      });
+    } catch (e) {
+      // Skip files we can't stat
+    }
+  }
+
+  // Sort by URL for consistency
+  urls.sort((a, b) => a.loc.localeCompare(b.loc));
+
+  const xmlLines = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ];
+
+  for (const url of urls) {
+    xmlLines.push("  <url>");
+    xmlLines.push(`    <loc>${url.loc}</loc>`);
+    xmlLines.push(`    <lastmod>${url.lastmod}</lastmod>`);
+    xmlLines.push(`    <changefreq>${url.changefreq}</changefreq>`);
+    xmlLines.push(`    <priority>${url.priority}</priority>`);
+    xmlLines.push("  </url>");
+  }
+
+  xmlLines.push("</urlset>");
+
+  return xmlLines.join("\n");
+}
+
 async function buildFallbackLlms(markdownFiles) {
   const lines = [
     "# DraftView docs for AI agents",
@@ -189,6 +241,7 @@ async function main() {
   let injectedMd = 0;
   let copiedUnversionedMd = 0;
   let updatedFavicons = 0;
+  let generatedSitemap = 0;
 
   const versionName = path.basename(versionDir);
   const faviconHref = await detectFaviconHref();
@@ -253,8 +306,12 @@ async function main() {
     copiedLlms += 2;
   }
 
+  const sitemap = await generateSitemap(htmlFiles);
+  await fs.writeFile(path.join(distDir, "sitemap.xml"), sitemap, "utf8");
+  generatedSitemap = 1;
+
   console.log(
-    `[postbuild-ai-readiness] version=${versionName} copiedLlms=${copiedLlms} copiedUnversionedMd=${copiedUnversionedMd} injectedHtml=${injectedHtml} injectedMd=${injectedMd} updatedFavicons=${updatedFavicons}`
+    `[postbuild-ai-readiness] version=${versionName} copiedLlms=${copiedLlms} copiedUnversionedMd=${copiedUnversionedMd} injectedHtml=${injectedHtml} injectedMd=${injectedMd} updatedFavicons=${updatedFavicons} generatedSitemap=${generatedSitemap}`
   );
 }
 
