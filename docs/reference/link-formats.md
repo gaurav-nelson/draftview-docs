@@ -37,10 +37,18 @@ https://www.draftview.app/try
 
 ## Integration routes
 
-### Edit this page integration
+### Edit this page integration (GitHub or GitLab)
+
+GitHub:
 
 ```text
 https://www.draftview.app/edit?url=https://github.com/<owner>/<repo>/blob/<branch-or-sha>/<path>
+```
+
+GitLab:
+
+```text
+https://www.draftview.app/edit?url=https://gitlab.com/<group-or-namespace>/<project>/-/blob/<branch-or-sha>/<path>
 ```
 
 ### External review route
