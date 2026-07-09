@@ -19,7 +19,8 @@
       "group": "Overview",
       "pages": [
         "overview/who-its-for",
-        "overview/how-it-works"
+        "overview/how-it-works",
+        "overview/changelog"
       ]
     },
     {
