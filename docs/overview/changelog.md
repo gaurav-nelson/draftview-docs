@@ -11,6 +11,14 @@ This page tracks the most significant DraftView updates by month.
 
 ## July 2026
 
+- Made PR deletions reviewable: deleted content now renders inline, reviewers can comment on it, and the comments anchor to the removed lines in the GitHub diff.
+- Added deletion-risk queue signals, including added and deleted line counts and a deletion-only badge, and added deleted content to the sign-off record.
+- Added inline image rendering in the editor with repo-aware path resolution, plus insert and edit controls for images.
+- Added a confirmation page for magic-link sign-in so email security scanners no longer consume single-use links.
+- Added self-serve free Team plan requests for eligible open-source projects, verified through a DraftView link-back.
+- Added an admin toggle for the human-review merge gate commit status.
+- Added branded transactional emails and a welcome email with guides matched to how you joined.
+- Made demo work carry through signup, so comments and edits from the try experience import into your first real review session.
 - Added MyST Markdown and Markdoc support so teams can review more docs formats in DraftView.
 - Added Antora include resource ID support, improving compatibility for Antora-based documentation.
 - Added GitLab support in the Edit this page flow, making cross-platform docs contribution easier.

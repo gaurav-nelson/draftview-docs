@@ -21,6 +21,20 @@ Fix:
 - Check URL format
 - Sign in for private PR workflows
 
+## My sign-in magic link says expired or already used
+
+Possible causes:
+
+- The link passed its expiry window
+- You already completed sign-in with that link
+
+Fix:
+
+- Request a new magic link from the sign-in page
+- On the confirmation page the link opens, select the button to finish sign-in
+
+The emailed link opens a confirmation page instead of signing you in directly. This keeps email security scanners from consuming your single-use link before you click it.
+
 ## The queue is empty after setup
 
 Possible causes:

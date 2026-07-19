@@ -45,6 +45,13 @@ Submit your review. DraftView posts suggestions and comments to the PR.
 - Magic-link reviewers create pending team feedback.
 - A GitHub-linked teammate can verify and push pending feedback.
 
+## Work with images
+
+- Images render inline in the editor, including images that relative paths reference in the repository. Images that the PR adds also preview correctly.
+- Select an image to edit its source, alt text, and title, or to remove it.
+- Use the **Insert image** button in the toolbar to add a new image.
+- DraftView never rewrites stored image paths. Your edits submit with the original path style.
+
 ## Notes for AsciiDoc and includes
 
 DraftView preserves source format on submit. AsciiDoc edits remain AsciiDoc. If a file includes other files, open and edit each included file directly.

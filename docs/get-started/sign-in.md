@@ -30,6 +30,11 @@ Go to [https://www.draftview.app/login](https://www.draftview.app/login).
 Enter your email for a one-time magic link, or choose Sign in with GitHub.
 
 </wc-step>
+<wc-step title="Confirm the magic link">
+
+If you use a magic link, the emailed link opens a confirmation page. Select the button on that page to complete sign-in. This extra step protects your single-use link from email security scanners that open links automatically.
+
+</wc-step>
 <wc-step title="Complete sign-in">
 
 After sign-in, DraftView sends you to your dashboard or the specific PR route you opened.
@@ -47,6 +52,8 @@ If you sign in with GitHub for the first time, DraftView can ask what you want t
 DraftView uses your choice to prioritize the dashboard experience.
 
 If your goal is AI docs oversight at team scale, choose the team queue path.
+
+After your first sign-in, DraftView sends a welcome email with links to the guides that match how you joined.
 
 ## Related pages
 

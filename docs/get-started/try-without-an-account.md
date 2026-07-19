@@ -22,6 +22,10 @@ Use the public demo to test the core DraftView use case on public GitHub pull re
 - It does not post feedback to GitHub.
 - It rate-limits requests by IP.
 
+## Your demo work carries into your account
+
+DraftView keeps the comments and edits you make in the demo for 48 hours in your browser. When you sign up and open the same PR, DraftView imports that work as local drafts, so you can review it and submit it for real instead of starting over.
+
 ## Steps
 
 <wc-steps>
@@ -46,7 +50,7 @@ Read the document view, then test comments and suggested edits.
 </wc-step>
 <wc-step title="Continue with full review">
 
-When you are ready to submit real feedback, sign in and load the same PR in your account.
+When you are ready to submit real feedback, sign in. DraftView carries your demo comments and edits into the real review session for the same PR.
 
 </wc-step>
 </wc-steps>

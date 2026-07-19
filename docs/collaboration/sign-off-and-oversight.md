@@ -20,11 +20,24 @@ Maintainers and admins can sign off queue items.
 - PR head SHA
 - CI state at sign-off time
 
+The sign-off record also lists the content that each file deletes, so approvers sign off on what the PR removed, not only on what remains.
+
 ## What happens after sign-off
 
 - If CI is green, DraftView moves the item to Ready to merge.
 - If CI is pending or failing, the item stays Signed off until CI passes.
 - A person still merges in GitHub.
+
+## The merge gate setting
+
+DraftView posts a `draftview/human-review` commit status to GitHub so branch protection can require human review before merge.
+
+Admins can turn this merge gate off in the org settings panel. When the gate is off:
+
+- DraftView posts no commit statuses.
+- The scorecard comment and oversight records stay on.
+
+Before you turn the gate off, remove the `draftview/human-review` check from branch protection in GitHub. Otherwise, PRs wait on a status that never arrives.
 
 ## Oversight surfaces
 

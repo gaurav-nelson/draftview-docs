@@ -13,7 +13,14 @@ When you submit review feedback, DraftView maps comments and edits to the PR so 
 
 - Review comments
 - Suggested changes for edited chunks
+- Comments on deleted content, anchored to the removed lines in the GitHub diff
 - Attribution to the GitHub identity that posted the review
+
+## How DraftView anchors feedback
+
+- Comments on current text anchor to the matching lines in the PR diff.
+- Comments on deleted content anchor to the removed lines on the base side of the diff, so the thread appears on the deletion itself.
+- Feedback on regions outside the PR diff posts as a file-level comment, and DraftView labels it that way in the submit panel before you submit.
 
 ## Submission paths
 

@@ -39,6 +39,16 @@ DraftView posts your comments to the PR review thread in GitHub.
 </wc-step>
 </wc-steps>
 
+## Comment on deleted content
+
+DraftView shows content that the PR removes as inline deletion blocks in the review surface, including files that the PR deletes entirely.
+
+To object to a deletion:
+
+1. Find the deletion block at the place where the content was removed.
+2. Select **Comment** on the block. DraftView quotes the deleted text into your comment so the author sees the full context.
+3. Submit your review. DraftView anchors the comment to the deleted lines in the GitHub diff, so the thread appears on the removed content itself.
+
 ## Write comments that resolve faster
 
 - Tie each comment to one issue.

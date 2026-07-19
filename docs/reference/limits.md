@@ -28,6 +28,16 @@ When a free org reaches the active reviewer limit for the month, new reviewers c
 - Team and Governance remove free-plan reviewer and queue caps
 - Governance adds audit export and oversight report surfaces
 
+## Free Team plan for open-source projects
+
+Eligible open-source projects can request a free Team plan from the Organization tab in the dashboard. The request requires a verified link back to DraftView through one of these methods:
+
+- A DraftView badge in the repository README
+- A DraftView link in the docs site footer
+- DraftView Edit this page links on the docs site
+
+DraftView verifies the link at request time and re-checks it periodically. The link must live on the repository's own site or the owner's `github.io` domain.
+
 ## External review link limits
 
 - Active links per repository: 10
