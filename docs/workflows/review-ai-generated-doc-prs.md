@@ -7,7 +7,7 @@ readtime: 6 min read
 
 # Review AI-generated documentation PRs
 
-Use this workflow to run the main DraftView promise: the human review layer for AI-generated docs.
+Use this workflow to put a human checkpoint on AI-generated docs PRs before they merge. This is the core DraftView workflow.
 
 ## Why this workflow matters
 
@@ -15,7 +15,7 @@ Use this workflow to run the main DraftView promise: the human review layer for 
 - Diff-only review often misses wording and procedural issues.
 - Teams need proof that qualified humans reviewed output before merge.
 
-## Outcomes this workflow gives your team
+## What your team gets
 
 - Keep up with AI output volume through a queue and lifecycle.
 - Run doc-native review that non-technical experts can complete.

@@ -15,7 +15,7 @@ AI writes the docs. DraftView is where a qualified human reviews, edits, comment
 
 - AI assistants open documentation pull requests faster than people can review them.
 - Review speed stays human, so teams rubber-stamp when queues pile up.
-- More teams need to prove human oversight, not only claim it happened.
+- More teams need to prove human oversight rather than claim it.
 
 ## What DraftView does in the loop
 

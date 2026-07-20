@@ -39,7 +39,7 @@ The emailed link opens a confirmation page instead of signing you in directly. T
 
 Possible causes:
 
-- App is not connected to the expected repositories
+- The app is not connected to the expected repositories
 - No open doc PRs match supported formats
 
 Fix:
@@ -62,7 +62,7 @@ Fix:
 Possible causes:
 
 - Your role is below Maintainer
-- Free plan active reviewer limit was reached
+- Your org reached the free plan active reviewer limit
 
 Fix:
 

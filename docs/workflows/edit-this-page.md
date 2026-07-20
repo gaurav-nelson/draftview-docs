@@ -55,7 +55,7 @@ Open a page, click Edit this page, edit, and confirm DraftView opens a pull requ
 ## Notes
 
 - DraftView works with Markdown, MDX, and AsciiDoc.
-- AsciiDoc include targets can be edited in their own sessions.
+- You can edit AsciiDoc include targets in their own sessions.
 - Supported source URL formats are `blob` and `edit` URLs from GitHub and GitLab.
 - You can paste URLs copied from the browser. DraftView accepts query strings and fragments.
 

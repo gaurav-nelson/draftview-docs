@@ -27,7 +27,7 @@ Each queue item has one cap:
 - Comment only
 - Edit
 
-Effective permission is the lower of role capability and item cap.
+Effective permission is the lower of the role capability and the item cap.
 
 Examples:
 

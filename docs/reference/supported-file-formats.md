@@ -38,7 +38,7 @@ DraftView supports common docs component syntax in supported files, including MD
 
 ### Images
 
-- Markdown, MDX, and AsciiDoc images render inline in the editor, including images that a relative path references in the repository.
+- Markdown, MDX, and AsciiDoc images render inline in the editor, including images referenced by relative paths in the repository.
 - Images that the PR itself adds or moves resolve against the PR head commit.
 - Raw HTML image blocks in Markdown files, such as badge and logo headers, render as image previews.
 

@@ -49,10 +49,6 @@ If the author or AI agent pushes a revision, compare updates against your previo
 </wc-step>
 </wc-steps>
 
-## Result
-
-You complete a full docs review in DraftView while keeping the PR workflow in GitHub.
-
 ## Related pages
 
 - [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)

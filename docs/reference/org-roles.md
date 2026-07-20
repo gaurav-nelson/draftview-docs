@@ -25,7 +25,7 @@ Queue items can be capped at:
 - Comment only
 - Edit
 
-Effective capability is the lower of role and item cap.
+Effective permission is the lower of the role capability and the item cap.
 
 ## Legacy mapping
 

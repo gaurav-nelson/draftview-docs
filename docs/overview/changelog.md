@@ -1,5 +1,5 @@
 ---
-title: DraftView Changelog
+title: DraftView changelog
 description: Month-by-month highlights of the most significant product updates in DraftView.
 tag: Overview
 readtime: 6 min read
@@ -7,7 +7,7 @@ readtime: 6 min read
 
 # DraftView changelog
 
-This page tracks the most significant DraftView updates by month.
+Significant DraftView updates, grouped by month.
 
 ## July 2026
 
@@ -19,10 +19,10 @@ This page tracks the most significant DraftView updates by month.
 - Added an admin toggle for the human-review merge gate commit status.
 - Added branded transactional emails and a welcome email with guides matched to how you joined.
 - Made demo work carry through signup, so comments and edits from the try experience import into your first real review session.
-- Added MyST Markdown and Markdoc support so teams can review more docs formats in DraftView.
-- Added Antora include resource ID support, improving compatibility for Antora-based documentation.
-- Added GitLab support in the Edit this page flow, making cross-platform docs contribution easier.
-- Added embed mode, suggested PRs, and onboarding UX improvements to help teams get productive faster.
+- Added MyST Markdown and Markdoc support for review and editing.
+- Added support for Antora resource IDs in includes.
+- Added GitLab support to the Edit this page flow.
+- Added embed mode, suggested PRs, and onboarding improvements.
 - Expanded the live review surface with head events, draft rebase support, external-review read-back, and a clearer sign-off view.
 - Added a free-forever tier with an organization queue and improved billing sync when plans change in the portal.
 - Improved team queue usability with intent-based queue behavior and contextual help tours.
@@ -30,19 +30,19 @@ This page tracks the most significant DraftView updates by month.
 
 ## June 2026
 
-- Shipped roles and permissions improvements to strengthen team collaboration controls.
-- Added email domain allowlisting and invite resend flows for better org onboarding and access control.
+- Shipped roles and permissions improvements for team collaboration controls.
+- Added email domain allowlisting and invite resend flows for org onboarding.
 - Improved queue reliability and usability, including queue controls/dialog fixes and org-connect flow fixes.
-- Released anchored suggestion diffs and line highlight fixes to make review context and feedback tracking clearer.
-- Expanded AI docs review workflows to make PR triage and review handoff clearer for teams.
+- Released anchored suggestion diffs and line highlight fixes, so feedback stays tied to the right lines.
+- Clarified PR triage and review handoff in the AI docs review workflows.
 
 ## May 2026
 
 - Introduced a major file editor upgrade with a Visual and Source toggle.
 - Added IDE-style keyboard shortcuts and improved active-line selection behavior in the editor.
-- Fixed important AsciiDoc editing edge cases (including visual-source toggle link rendering and list parsing).
-- Refreshed product experience and UI with broader revamps, mobile fixes, and improved landing and editing flows.
-- Added practical docs-as-code resources and calculators to help teams plan review effort and reduce docs drift.
+- Fixed AsciiDoc editing edge cases, including visual-source toggle link rendering and list parsing.
+- Refreshed the UI, with mobile fixes and improved landing and editing flows.
+- Added docs-as-code resources and calculators for planning review effort and reducing docs drift.
 
 ## April 2026
 
@@ -50,7 +50,7 @@ This page tracks the most significant DraftView updates by month.
 - Added the public PR try experience and expanded install and onboarding flow reliability.
 - Improved dashboard architecture and UX, including settings split, onboarding tour, welcome banner, and performance improvements.
 - Hardened auth and GitHub App installation handling, including compatibility fixes and fork PR install checks.
-- Improved review and account reliability with stronger security handling and more resilient platform behavior.
+- Improved review and account reliability and hardened security handling.
 
 ## March 2026
 

@@ -20,7 +20,7 @@ Maintainers and admins can sign off queue items.
 - PR head SHA
 - CI state at sign-off time
 
-The sign-off record also lists the content that each file deletes, so approvers sign off on what the PR removed, not only on what remains.
+The sign-off record also lists the content that each file deletes, so sign-off covers what the PR removed as well as what remains.
 
 ## What happens after sign-off
 

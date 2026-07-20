@@ -7,7 +7,7 @@ readtime: 4 min read
 
 # Suggest edits in the visual editor
 
-Use this workflow when you want to propose exact wording changes, not only comments.
+Use this workflow when you want to propose exact wording changes instead of describing them in a comment.
 
 ## Before you start
 
@@ -47,7 +47,7 @@ Submit your review. DraftView posts suggestions and comments to the PR.
 
 ## Work with images
 
-- Images render inline in the editor, including images that relative paths reference in the repository. Images that the PR adds also preview correctly.
+- Images render inline in the editor, including images referenced by relative paths in the repository. Images that the PR adds also preview correctly.
 - Select an image to edit its source, alt text, and title, or to remove it.
 - Use the **Insert image** button in the toolbar to add a new image.
 - DraftView never rewrites stored image paths. Your edits submit with the original path style.
