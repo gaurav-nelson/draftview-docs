@@ -21,6 +21,35 @@ Fix:
 - Check URL format
 - Sign in for private PR workflows
 
+## I cannot open a PR after signing in
+
+Possible causes:
+
+- The repository is private and the DraftView GitHub App isn't installed on it
+- The PR doesn't exist, or the URL is wrong
+
+Fix:
+
+- For a private repository, ask a repository admin to install the DraftView GitHub App
+- Check the PR URL
+
+Public PRs open without the app. You need the app only to submit your review.
+
+## I cannot submit my review
+
+Cause:
+
+- The DraftView GitHub App isn't installed on the repository
+
+Fix:
+
+- Select the install link in the review banner. Your drafts stay saved, and you can submit after the install finishes.
+- If the PR comes from your fork, install the app on your fork, not on the upstream repository.
+
+## I see a "Something went wrong" page
+
+DraftView reports the error automatically. Select **Try again**, or go back to your dashboard. If the error keeps happening, contact support and include the reference code shown on the page.
+
 ## My sign-in magic link says expired or already used
 
 Possible causes:

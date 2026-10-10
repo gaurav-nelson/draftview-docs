@@ -13,13 +13,15 @@ Use the public demo to test the core DraftView use case on public GitHub pull re
 
 - Load a public PR
 - Read changed docs in the visual review surface
+- See the PR's existing review threads next to the text they discuss, and try replying to them
 - Add comments and suggested edits in the demo experience
 - Simulate the human checkpoint before merge
 
 ## What the demo does not do
 
 - It does not load private repositories.
-- It does not post feedback to GitHub.
+- It does not post feedback to GitHub, including replies to existing threads.
+- It shows up to 50 existing review threads, with unresolved threads first.
 - It rate-limits requests by IP.
 
 ## Your demo work carries into your account

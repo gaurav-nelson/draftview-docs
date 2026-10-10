@@ -5,11 +5,10 @@
   "scripts": {
     "dev": "docslit dev",
     "build": "docslit build",
-    "postbuild": "node scripts/postbuild-ai-readiness.mjs",
     "validate": "docslit validate"
   },
   "devDependencies": {
-    "docslit": "^0.1.10",
+    "docslit": "^0.1.11",
     "esbuild": "0.28.1"
   }
 }

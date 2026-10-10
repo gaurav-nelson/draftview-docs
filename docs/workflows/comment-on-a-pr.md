@@ -39,6 +39,18 @@ DraftView posts your comments to the PR review thread in GitHub.
 </wc-step>
 </wc-steps>
 
+## Format your comment
+
+DraftView renders comments as GitHub-flavored Markdown, so your comment looks the same in DraftView and in GitHub. You can use code spans, code blocks, lists, task lists, tables, and links.
+
+Comments from GitHub, including review bots, render the same way. DraftView keeps the inline HTML that GitHub allows, such as badges and collapsible `<details>` sections, and removes scripts, styles, and other unsafe markup.
+
+## Reply to existing threads
+
+DraftView shows the PR's existing GitHub review threads next to the text they discuss. Select **Reply** to answer a thread, or **Resolve** to close it. To open a resolved thread again, select **Reopen**.
+
+DraftView holds your replies and resolve actions on GitHub threads until you submit your review, then sends them to GitHub with the rest of your feedback.
+
 ## Comment on deleted content
 
 DraftView shows content that the PR removes as inline deletion blocks in the review surface, including files that the PR deletes entirely.

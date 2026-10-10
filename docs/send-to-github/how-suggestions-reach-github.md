@@ -14,6 +14,7 @@ When you submit review feedback, DraftView maps comments and edits to the PR so 
 - Review comments
 - Suggested changes for edited chunks
 - Comments on deleted content, anchored to the removed lines in the GitHub diff
+- Replies to existing review threads, and threads you resolved or reopened
 - Attribution to the GitHub identity that posted the review
 
 ## How DraftView anchors feedback
