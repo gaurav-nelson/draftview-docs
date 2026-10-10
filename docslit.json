@@ -2,8 +2,51 @@
   "url": "https://docs.draftview.app",
   "name": "DraftView",
   "logo": "logo.png",
+  "favicon": "logo.png",
+  "head": [
+    "<link rel=\"apple-touch-icon\" href=\"/logo.png\">"
+  ],
   "description": "The human review layer for AI-generated docs. Review documentation PRs visually on top of GitHub.",
   "editUrl": "https://www.draftview.app/edit?url=https://github.com/gaurav-nelson/draftview-docs/blob/main/docs",
+  "navbar": {
+    "links": [
+      {
+        "label": "Try the demo",
+        "href": "https://www.draftview.app/try",
+        "external": true
+      },
+      {
+        "label": "Open DraftView",
+        "href": "https://www.draftview.app/dashboard",
+        "external": true
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 DraftView",
+    "links": [
+      {
+        "label": "draftview.app",
+        "href": "https://www.draftview.app",
+        "external": true
+      },
+      {
+        "label": "Privacy",
+        "href": "https://www.draftview.app/privacy",
+        "external": true
+      },
+      {
+        "label": "Security",
+        "href": "https://www.draftview.app/security",
+        "external": true
+      },
+      {
+        "label": "Terms",
+        "href": "https://www.draftview.app/terms",
+        "external": true
+      }
+    ]
+  },
   "sidebar": [
     {
       "group": "Start here",
@@ -79,15 +122,5 @@
       ]
     }
   ],
-  "versions": {
-    "default": "1.0",
-    "list": [
-      {
-        "version": "1.0",
-        "branch": "main",
-        "tag": "Latest"
-      }
-    ]
-  },
   "theme": "./brand-theme.json"
 }

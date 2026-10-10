@@ -27,6 +27,7 @@ Start here: [Try DraftView without an account](try-without-an-account).
 
 - A GitHub account
 - Access to the repository that contains the PR
+- The DraftView GitHub App installed on the repository, if you want to submit your review. Public PRs open without it.
 
 Start here: [Review your first pull request](review-your-first-pr).
 

@@ -9,6 +9,18 @@ readtime: 6 min read
 
 Significant DraftView updates, grouped by month.
 
+## October 2026
+
+- Fixed comments on deleted content that sometimes didn't appear in the review surface. They now attach to the deletion block they belong to.
+- Review threads that a link owner pushes for an external reviewer now show the external reviewer's name as the author in DraftView.
+- Added an error page with a reference code. If something breaks, select **Try again** or share the reference code with support.
+
+## August 2026
+
+- Signed-in reviewers can open public PRs without the DraftView GitHub App installed on the repository. You can read, comment, and draft edits right away. You need the app only to submit your review.
+- Comments now render as GitHub-flavored Markdown, including code, tables, task lists, and the inline HTML that review bots use for badges and collapsible sections.
+- The public demo now shows a PR's existing review threads, and you can try replying to them without posting anything to GitHub.
+
 ## July 2026
 
 - Made PR deletions reviewable: deleted content now renders inline, reviewers can comment on it, and the comments anchor to the removed lines in the GitHub diff.
@@ -18,6 +30,7 @@ Significant DraftView updates, grouped by month.
 - Added self-serve free Team plan requests for eligible open-source projects, verified through a DraftView link-back.
 - Added an admin toggle for the human-review merge gate commit status.
 - Added branded transactional emails and a welcome email with guides matched to how you joined.
+- Rewrote the comment DraftView posts on docs PRs so it leads with the review link. When a PR looks AI-assisted, the comment says so without claiming the docs are AI-generated.
 - Made demo work carry through signup, so comments and edits from the try experience import into your first real review session.
 - Added MyST Markdown and Markdoc support for review and editing.
 - Added support for Antora resource IDs in includes.
