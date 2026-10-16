@@ -2,7 +2,7 @@
 title: Comment on a pull request
 description: Leave clear, actionable comments in DraftView and sync them to GitHub review threads.
 tag: Workflows
-readtime: 3 min read
+readtime: 4 min read
 ---
 
 # Comment on a pull request
@@ -19,7 +19,7 @@ Use comments when you want the author to make a change, explain a decision, or c
 <wc-steps>
 <wc-step title="Select the text region">
 
-Open the file in the visual surface, then highlight the sentence or block you want to discuss.
+Open the file in the visual surface, then highlight the sentence or block you want to discuss. To start a comment from the keyboard, press Cmd+Option+M on macOS or Ctrl+Alt+M on Windows and Linux.
 
 </wc-step>
 <wc-step title="Write a specific comment">
@@ -50,6 +50,13 @@ Comments from GitHub, including review bots, render the same way. DraftView keep
 DraftView shows the PR's existing GitHub review threads next to the text they discuss. Select **Reply** to answer a thread, or **Resolve** to close it. To open a resolved thread again, select **Reopen**.
 
 DraftView holds your replies and resolve actions on GitHub threads until you submit your review, then sends them to GitHub with the rest of your feedback.
+
+## Manage threads in the comment lane
+
+- Resolved threads leave the lane. Select **Undo** in the confirmation to bring a thread back right away, or select **Show resolved** to see all resolved threads.
+- Long threads collapse when you aren't working in them. Select a thread to expand it.
+- Threads from teammates appear without a reload. DraftView refreshes shared threads about every 20 seconds while the page is open.
+- If a comment, reply, or edit fails to save, DraftView keeps your text in the box so you can try again. If you close a comment box with text in it, DraftView asks before it discards the text.
 
 ## Comment on deleted content
 

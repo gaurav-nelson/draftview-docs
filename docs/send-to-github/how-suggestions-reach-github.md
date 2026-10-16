@@ -33,6 +33,10 @@ DraftView posts directly to GitHub with that reviewer's account.
 
 DraftView stores feedback as pending team review. A GitHub-linked teammate verifies and pushes it.
 
+### Doc reviews
+
+A doc review sends nothing to GitHub until a maintainer finishes it. Then DraftView opens one pull request with the accepted edits and a Markdown record of the review. It posts the comment threads and the edits it didn't apply as review comments on that pull request. See [What DraftView sends to GitHub](../workflows/run-a-doc-review#what-draftview-sends-to-github).
+
 ## What authors see in GitHub
 
 Authors see normal GitHub review comments and suggested changes. They can apply suggestions with standard GitHub controls.

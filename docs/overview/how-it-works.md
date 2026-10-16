@@ -2,7 +2,7 @@
 title: How DraftView works
 description: Learn the review lifecycle, queue behavior, and GitHub handoff model in DraftView.
 tag: Overview
-readtime: 6 min read
+readtime: 7 min read
 ---
 
 # How DraftView works
@@ -51,6 +51,16 @@ External links are snapshot-based by design.
 - DraftView captures the PR state at link creation time.
 - External reviewers always review that same snapshot.
 - If the PR moves later, reviewers see a staleness notice and can request a new link.
+
+## Doc reviews
+
+Not every review starts with a pull request. A doc review (in preview) lets your team review files straight from a branch.
+
+- A maintainer picks up to 25 files on a branch. DraftView pins them at the branch's latest commit, so everyone reviews the same snapshot.
+- Org members, including reviewers without GitHub, comment and suggest edits in DraftView. Nothing reaches GitHub during the review.
+- A maintainer accepts or rejects each edit, then finishes the review. DraftView opens one pull request with the accepted edits, commits a record of the whole review, and posts the remaining comments on the pull request.
+
+See [Review files without a pull request](../workflows/run-a-doc-review).
 
 ## Sign-off and oversight
 

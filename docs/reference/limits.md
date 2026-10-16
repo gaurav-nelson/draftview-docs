@@ -46,6 +46,15 @@ DraftView verifies the link at request time and re-checks it periodically. The l
 
 External links always review a frozen snapshot of the PR.
 
+## Doc review limits
+
+- Files per review: 25
+- Fork mode works only on public repositories
+- Unsaved edits live in the browser where you made them. Select **Save** before you switch devices.
+- Accept and reject are final. You can't reopen a decided edit.
+- When you finish, DraftView posts at most 40 edit comments and 40 file-level comments on the pull request. The review record in the pull request still lists everything, and the pull request notes what it left out.
+- A review finished with no accepted edits opens no pull request
+
 ## Demo limits
 
 - Demo only loads public PRs

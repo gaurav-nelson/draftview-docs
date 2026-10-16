@@ -31,7 +31,7 @@ Sign in at [https://www.draftview.app/login](https://www.draftview.app/login), t
 </wc-step>
 <wc-step title="Connect the DraftView GitHub App">
 
-Install the app for the repositories you want in the queue.
+Install the app for the repositories you want in the queue. The app asks for read and write access to contents and pull requests. DraftView needs write access to contents only to open the pull request when you finish a [doc review](../workflows/run-a-doc-review).
 
 </wc-step>
 <wc-step title="Confirm repository selection">
@@ -61,4 +61,5 @@ Open a queue item, review it, submit feedback, and complete sign-off.
 
 - [Roles and permissions](roles-and-permissions)
 - [Sign-off and oversight](sign-off-and-oversight)
+- [Configure doc reviews](configure-doc-reviews)
 - [Push teammate feedback to GitHub](../send-to-github/push-reviewer-feedback)

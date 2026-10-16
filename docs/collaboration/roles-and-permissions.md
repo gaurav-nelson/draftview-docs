@@ -2,7 +2,7 @@
 title: Roles and permissions
 description: Assign the right DraftView roles and understand how item-level permissions interact with roles.
 tag: Collaboration
-readtime: 5 min read
+readtime: 6 min read
 ---
 
 # Roles and permissions
@@ -33,6 +33,19 @@ Examples:
 
 - An Editor on a Comment only item can comment but cannot edit.
 - A Maintainer on a View only item can only view that item.
+
+## Doc reviews
+
+[Doc reviews](../workflows/run-a-doc-review) use the same roles and caps. The maintainer who starts a review sets its cap in **Everyone can, at most**.
+
+- Viewers can read the files, comments, and edits.
+- Commenters can comment, reply, and resolve threads.
+- Editors can also suggest edits.
+- Maintainers and admins can start a review, add files, change its settings, accept or reject edits, and finish or cancel it. They can manage the review whatever its cap.
+
+Two per-review settings switch capabilities off for everyone. **Allow comments** controls whether anyone can start threads and reply. **Only maintainers resolve threads** limits resolving to maintainers and admins.
+
+Only members of your organization can open a doc review.
 
 ## Legacy naming
 

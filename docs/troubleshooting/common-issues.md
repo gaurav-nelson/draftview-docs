@@ -2,7 +2,7 @@
 title: Troubleshooting common issues
 description: Fix common DraftView issues across demo, queue, external links, and GitHub handoff.
 tag: Troubleshooting
-readtime: 5 min read
+readtime: 7 min read
 ---
 
 # Troubleshooting common issues
@@ -130,6 +130,61 @@ Fix:
 
 - Reopen review and verify changed regions
 - Leave a follow-up comment with exact expected changes
+
+## A reviewer can't open a doc review link
+
+Cause:
+
+- Only members of your DraftView organization can open a doc review
+
+Fix:
+
+- Invite the reviewer from the Organization tab, then send the link again. They can join by magic link without a GitHub account.
+
+## I can't comment or suggest edits in a doc review
+
+Possible causes:
+
+- Your role or the review's permission cap doesn't allow it
+- A maintainer turned off **Allow comments**
+- The review is finished or cancelled, so it's read-only
+
+Fix:
+
+- Check the top bar of the review. It shows **You can comment and suggest edits**, **You can comment**, or **View only**.
+- Ask a maintainer to change your role or the review's **Everyone can, at most** setting
+
+## My doc review edits are missing on another device
+
+Cause:
+
+- DraftView keeps unsaved edits in the browser where you made them
+
+Fix:
+
+- Go back to the first browser and select **Save**. Saved edits show up for everyone, on every device.
+
+## Finishing a doc review fails
+
+The error in the **Finish review** dialog names the cause. The most common ones:
+
+- **The DraftView GitHub App needs Contents and Pull requests write permission on this installation.** Ask the installation owner to accept the updated app permissions in GitHub, or have a maintainer with push access finish the review.
+- **Branch mode needs push access to the repo or the DraftView GitHub App installed on it.** Install the app on the repository, or have someone with push access finish the review.
+- **Fork mode needs a linked GitHub account.** Link GitHub to your DraftView account, or ask an admin to switch the repository to branch mode.
+- **Authorize DraftView to open pull requests from a fork.** Select **Authorize on GitHub**, then finish again.
+- **Could not open the pull request.** A pull request from the same branch might already exist, or there might be nothing to merge.
+
+See [Configure doc reviews](../collaboration/configure-doc-reviews).
+
+## The Fork option is unavailable for a repository
+
+Cause:
+
+- The repository is private. Fork mode works only on public repositories.
+
+Fix:
+
+- Use **Branch in the repo** for private repositories
 
 ## Related pages
 
