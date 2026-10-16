@@ -26,8 +26,8 @@ If you installed the app before doc reviews were available, GitHub asks the owne
 Each repository has its own pull request source. To change it:
 
 1. In the [dashboard](https://www.draftview.app/dashboard), open the **Organization** tab.
-2. Expand **Doc reviews**.
-3. Next to the repository, choose a pull request source.
+2. Select **GitHub**.
+3. Under **Doc reviews**, choose a pull request source next to the repository.
 
 | Source | How it works | Requirements |
 |---|---|---|
@@ -46,7 +46,7 @@ To use another folder, enter it in **Record folder** next to the repository. Lea
 
 ## Send doc review events to Slack or a webhook
 
-If your organization sends notifications to Slack or a webhook, you can choose which doc review events to send. Open the **Organization** tab, expand **Notifications**, and select the events in the doc reviews list.
+If your organization sends notifications to Slack or a webhook, you can choose which doc review events to send. Open the **Organization** tab, select **Notifications**, and select the events under **Doc reviews** in the **Events** list. Only admins see the **Notifications** tab.
 
 | Event | On by default |
 |---|---|

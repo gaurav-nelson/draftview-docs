@@ -124,6 +124,8 @@ The toolbar counts the open threads, proposed edits, and accepted edits in the r
 
 Select **Record** to see everything that happened in the review: every comment, edit, and decision, who made it, and when. Each edit shows exactly what it added and removed, and you can expand it into a red and green diff. Accepted and rejected edits link back to the proposal they decided.
 
+Maintainers and admins can download the record from the same dialog. **Download .md** saves the Markdown record that **Finish** commits to the pull request, and works on every plan. **Audit record (JSON)** saves a sealed audit record on the Governance plan. See [Export audit records](../collaboration/sign-off-and-oversight#export-audit-records).
+
 ## Change the review
 
 Maintainers can change a review while it's open:

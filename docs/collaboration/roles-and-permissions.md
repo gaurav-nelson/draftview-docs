@@ -19,6 +19,8 @@ DraftView uses org roles and per-item permission caps.
 | Maintainer | Yes | Yes | Yes | Yes | Yes | No |
 | Admin | Yes | Yes | Yes | Yes | Yes | Yes |
 
+To see the same table in DraftView, open the **Organization** tab and select **Roles & access**. Admins change a member's role in **Members**.
+
 ## Item permission caps
 
 Each queue item has one cap:
@@ -33,6 +35,8 @@ Examples:
 
 - An Editor on a Comment only item can comment but cannot edit.
 - A Maintainer on a View only item can only view that item.
+
+Admins set the cap that new queue items start with in **Access for new PRs**, under **Roles & access**. Maintainers can change the cap on each item.
 
 ## Doc reviews
 

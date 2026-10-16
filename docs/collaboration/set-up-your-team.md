@@ -41,7 +41,7 @@ Confirm repository access in DraftView. DraftView backfills recent open doc PRs 
 </wc-step>
 <wc-step title="Invite members">
 
-Invite teammates and assign roles. Reviewers without GitHub can join by magic link.
+In the **Organization** tab, select **Members**, enter an email address under **Invite by email**, and choose a role. Reviewers without GitHub can join by magic link. To invite the collaborators on a connected repository at once, select **Invite collaborators from a GitHub repo**.
 
 </wc-step>
 <wc-step title="Run your first queue review">
@@ -50,6 +50,21 @@ Open a queue item, review it, submit feedback, and complete sign-off.
 
 </wc-step>
 </wc-steps>
+
+## Organization settings
+
+All org settings live in the **Organization** tab of the [dashboard](https://www.draftview.app/dashboard), grouped into tabs:
+
+| Tab | What it covers | Who sees it |
+|---|---|---|
+| **Members** | Members and their roles, invitations, and pending invites | Everyone |
+| **Roles & access** | What each role can do, access for new PRs, PRs from other repositories, and allowed email domains for invites | Everyone. Only admins can change settings. |
+| **GitHub** | The GitHub App connection, the human-review merge gate, and [doc review](configure-doc-reviews) settings per repository | Everyone. Only admins can change settings. |
+| **Notifications** | Slack, a custom webhook, and which events to send | Admins |
+| **Billing** | Your plan, usage, and the open-source grant | Everyone |
+| **Oversight** | The [oversight report](sign-off-and-oversight#oversight-report), record exports, and record verification | Maintainers and admins |
+
+DraftView reopens the tab you used last. If the GitHub App isn't connected yet, admins land on **GitHub**.
 
 ## Plan and billing basics
 

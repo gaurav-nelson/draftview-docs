@@ -66,7 +66,7 @@ See [Review files without a pull request](../workflows/run-a-doc-review).
 
 Maintainers and admins can sign off queue items.
 
-Sign-off records who approved, at which head SHA, and with which CI status. Governance plan orgs can export audit records and view oversight metrics.
+Sign-off records who approved, at which head SHA, and with which CI status. Governance plan orgs get an oversight report that covers AI PRs and doc reviews, plus sealed audit records that maintainers can check for changes later.
 
 See [Sign-off and oversight](../collaboration/sign-off-and-oversight).
 
