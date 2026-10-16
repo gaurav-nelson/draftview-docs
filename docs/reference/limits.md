@@ -26,11 +26,11 @@ When a free org reaches the active reviewer limit for the month, new reviewers c
 
 - Trial length: 14 days, starts when you connect the GitHub App
 - Team and Governance remove free-plan reviewer and queue caps
-- Governance adds audit export and oversight report surfaces
+- Governance adds the oversight report, sealed audit records for PRs and doc reviews, the oversight ledger export, and compliance alerts
 
 ## Free Team plan for open-source projects
 
-Eligible open-source projects can request a free Team plan from the Organization tab in the dashboard. The request requires a verified link back to DraftView through one of these methods:
+Eligible open-source projects can request a free Team plan from **Billing** in the **Organization** tab of the dashboard. The request requires a verified link back to DraftView through one of these methods:
 
 - A DraftView badge in the repository README
 - A DraftView link in the docs site footer

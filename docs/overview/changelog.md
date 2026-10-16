@@ -11,6 +11,12 @@ Significant DraftView updates, grouped by month.
 
 ## October 2026
 
+- Reorganized Organization settings into six tabs: **Members**, **Roles & access**, **GitHub**, **Notifications**, **Billing**, and **Oversight**. **Roles & access** shows what each role can do and gathers every permission setting in one place. See [Set up your team](../collaboration/set-up-your-team#organization-settings).
+- Added doc reviews to the Governance oversight report, next to AI pull requests. The report shows how many finished reviews had review on record, how many accepted edits someone other than their author decided, and how many edits were self-approved. You can pick a reporting period, and AI PRs now break down by generator. See [Oversight report](../collaboration/sign-off-and-oversight#oversight-report).
+- Added audit records for doc reviews. Download the Markdown record on any plan, or a sealed JSON audit record on Governance, from the review's **Record** dialog or the **Oversight** tab.
+- Added an oversight ledger export on Governance, with one row for every queue PR and doc review in a period, as CSV or sealed JSON.
+- DraftView now seals every JSON record it exports, including pull request records. Check a file under **Verify a record** in the **Oversight** tab.
+- Added two Governance compliance alerts for doc reviews: one when a finished review's record is ready to export, and one when a review finishes with edits accepted by their own author.
 - Added doc reviews, in preview. Your team can review documentation files straight from a branch, with no pull request and no GitHub account. Reviewers comment and suggest edits in DraftView, and a maintainer accepts or rejects each edit. When the maintainer finishes the review, DraftView opens one pull request with the accepted edits, commits a Markdown record of the review, and posts the remaining comments on the pull request. See [Review files without a pull request](../workflows/run-a-doc-review).
 - Added per-repository settings for doc reviews: open the pull request from a branch in the repository or from a fork, and choose where review records go. See [Configure doc reviews](../collaboration/configure-doc-reviews).
 - Added doc review events to Slack and webhook notifications.

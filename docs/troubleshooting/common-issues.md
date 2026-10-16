@@ -139,7 +139,7 @@ Cause:
 
 Fix:
 
-- Invite the reviewer from the Organization tab, then send the link again. They can join by magic link without a GitHub account.
+- Invite the reviewer from **Members** in the **Organization** tab, then send the link again. They can join by magic link without a GitHub account.
 
 ## I can't comment or suggest edits in a doc review
 
