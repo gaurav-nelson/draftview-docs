@@ -17,6 +17,16 @@ Choose your goal, then confirm the prerequisites for that path.
 
 Start here: [Set up your team](../collaboration/set-up-your-team), then run [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs).
 
+## Review files on a branch without a PR
+
+- A DraftView organization with the GitHub App connected
+- The Maintainer or Admin role, to start and finish the review
+- The GitHub App's Contents and Pull requests write permissions, so DraftView can open the pull request when you finish
+
+Reviewers need only an invite to your organization. They don't need a GitHub account.
+
+Start here: [Review files without a pull request](../workflows/run-a-doc-review).
+
 ## Try quickly with no setup
 
 You need only a browser and a public GitHub PR URL.

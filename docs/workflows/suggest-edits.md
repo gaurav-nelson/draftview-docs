@@ -45,6 +45,10 @@ Submit your review. DraftView posts suggestions and comments to the PR.
 - Magic-link reviewers create pending team feedback.
 - A GitHub-linked teammate can verify and push pending feedback.
 
+## Work with lists
+
+To indent a list item, press Tab or select **Indent** in the toolbar. To outdent it, press Shift+Tab or select **Outdent**. These controls work in every DraftView editor.
+
 ## Work with images
 
 - Images render inline in the editor, including images referenced by relative paths in the repository. Images that the PR adds also preview correctly.

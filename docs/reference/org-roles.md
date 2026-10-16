@@ -19,13 +19,15 @@ Use this table as a quick lookup for org-level role capabilities.
 
 ## Item caps
 
-Queue items can be capped at:
+Queue items and doc reviews can be capped at:
 
 - View only
 - Comment only
 - Edit
 
 Effective permission is the lower of the role capability and the item cap.
+
+In a doc review, Curate queue covers starting the review, managing its files and settings, and accepting or rejecting edits. Sign off covers finishing the review.
 
 ## Legacy mapping
 

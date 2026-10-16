@@ -37,10 +37,11 @@ These teams need to answer one question with evidence: "Can you prove a qualifie
 - Non-technical reviewers cannot work effectively in GitHub diffs.
 - Your team must verify whether follow-up AI commits actually addressed feedback.
 - You need a durable sign-off and oversight trail.
+- Legal, compliance, or subject matter experts need to review published docs on a branch, with no pull request. See [Review files without a pull request](../workflows/run-a-doc-review).
 
 ## DraftView is not the right tool when
 
-- Your docs do not live in GitHub pull requests.
+- Your docs do not live in a GitHub repository.
 - You need a docs host, CMS, or static-site generator.
 - You need a code review product for source code, not documentation.
 

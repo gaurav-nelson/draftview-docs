@@ -2,7 +2,7 @@
 title: DraftView changelog
 description: Month-by-month highlights of the most significant product updates in DraftView.
 tag: Overview
-readtime: 6 min read
+readtime: 7 min read
 ---
 
 # DraftView changelog
@@ -11,6 +11,15 @@ Significant DraftView updates, grouped by month.
 
 ## October 2026
 
+- Added doc reviews, in preview. Your team can review documentation files straight from a branch, with no pull request and no GitHub account. Reviewers comment and suggest edits in DraftView, and a maintainer accepts or rejects each edit. When the maintainer finishes the review, DraftView opens one pull request with the accepted edits, commits a Markdown record of the review, and posts the remaining comments on the pull request. See [Review files without a pull request](../workflows/run-a-doc-review).
+- Added per-repository settings for doc reviews: open the pull request from a branch in the repository or from a fork, and choose where review records go. See [Configure doc reviews](../collaboration/configure-doc-reviews).
+- Added doc review events to Slack and webhook notifications.
+- The DraftView GitHub App now asks for read and write access to repository contents, so it can open the pull request when a doc review finishes. Installation owners need to accept the updated permissions.
+- Added Indent and Outdent toolbar buttons, plus Tab and Shift+Tab for list items, in every editor.
+- Fixed comment cards that overlapped each other in the comment lane. Comment text now stays in the box when a save fails.
+- Added a **Show resolved** toggle and an **Undo** option when you resolve a thread. Shared threads now refresh without a reload.
+- Added a keyboard shortcut to comment on selected text: Cmd+Option+M on macOS, Ctrl+Alt+M on Windows and Linux.
+- Viewers and View only queue items can no longer edit or delete comments. Comment actions now follow the same role and cap rules everywhere.
 - Fixed comments on deleted content that sometimes didn't appear in the review surface. They now attach to the deletion block they belong to.
 - Review threads that a link owner pushes for an external reviewer now show the external reviewer's name as the author in DraftView.
 - Added an error page with a reference code. If something breaks, select **Try again** or share the reference code with support.

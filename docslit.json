@@ -77,6 +77,7 @@
       "pages": [
         "workflows/suggest-edits",
         "workflows/comment-on-a-pr",
+        "workflows/run-a-doc-review",
         "workflows/invite-an-external-reviewer",
         "workflows/edit-this-page"
       ]
@@ -94,6 +95,7 @@
       "pages": [
         "collaboration/set-up-your-team",
         "collaboration/roles-and-permissions",
+        "collaboration/configure-doc-reviews",
         "collaboration/sign-off-and-oversight"
       ]
     },
