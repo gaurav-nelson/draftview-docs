@@ -35,6 +35,6 @@ DraftView does not replace GitHub. Your repository remains the source of truth, 
 ## Related pages
 
 - [Quickstart](../get-started/quickstart)
-- [Who DraftView is for](who-its-for)
-- [How DraftView works](how-it-works)
+- [Who DraftView is for](../overview/who-its-for)
+- [How DraftView works](../overview/how-it-works)
 - [Sign-off and oversight](../collaboration/sign-off-and-oversight)
