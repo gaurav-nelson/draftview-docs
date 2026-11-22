@@ -1,54 +1,55 @@
 ---
 title: Who DraftView is for
-description: See who buys DraftView, who uses it, and where it fits in AI docs workflows.
+description: See who uses DraftView, where it fits in docs workflows, and when to adopt it.
 tag: Overview
 readtime: 4 min read
 ---
 
 # Who DraftView is for
 
-Use DraftView when AI-generated documentation PRs are outpacing human review.
+DraftView is for teams that collaborate on documentation in Git workflows without forcing non-engineers to read raw markup or create GitHub accounts.
 
-## Primary audience: documentation owner
+## Primary audience: documentation owners and tech leads
 
 - Documentation leads and staff technical writers
 - DevEx, DevRel, and developer documentation managers
-- Engineering leads who own docs in their repositories
+- Engineering leads who own documentation in their repositories
 
-This person usually connects the GitHub App, owns rollout, and champions adoption.
+This person usually connects the GitHub App, configures team settings, and coordinates docs reviews.
 
-## Secondary audience: reviewers who validate quality
+## Secondary audience: cross-functional reviewers
 
-- Product managers
-- Legal and compliance reviewers
-- Subject matter experts such as support, security, or solutions teams
-- External reviewers
+- Product managers validating feature accuracy
+- Legal and compliance teams verifying terms, security disclosures, and policy updates
+- Subject matter experts (support, solutions engineering, security)
+- Outside stakeholders and community contributors
 
-These reviewers often do not have GitHub accounts. DraftView supports their review flow through magic-link access and verify-and-push.
+These reviewers often don't have GitHub accounts or write Git commits. DraftView gives them a rendered reading canvas, magic-link email access, and visual editing tools.
 
 ## Tertiary audience: compliance and governance owners
 
-These teams need to answer one question with evidence: "Can you prove a qualified human reviewed this AI output before merge?"
+Teams using AI assistance or working under regulatory oversight need to answer one question with evidence: *"Can you prove a qualified person reviewed this documentation before merge?"*
+
+DraftView provides verifiable sign-offs, oversight reports, and sealed audit records.
 
 ## DraftView fits when
 
-- AI tools open docs PRs faster than your team can review.
-- Docs PRs spread across repositories and lose visibility.
-- Non-technical reviewers cannot work effectively in GitHub diffs.
-- Your team must verify whether follow-up AI commits actually addressed feedback.
+- Engineers write or review in Git, but other teammates need to review formatted docs.
+- Non-technical stakeholders cannot work effectively in GitHub diffs.
+- AI tools open docs PRs faster than your team can review them.
+- Your team needs to review published files on a branch before opening a pull request. See [Review files without a pull request](../workflows/run-a-doc-review).
 - You need a durable sign-off and oversight trail.
-- Legal, compliance, or subject matter experts need to review published docs on a branch, with no pull request. See [Review files without a pull request](../workflows/run-a-doc-review).
 
 ## DraftView is not the right tool when
 
-- Your docs do not live in a GitHub repository.
-- You need a docs host, CMS, or static-site generator.
-- You need a code review product for source code, not documentation.
+- Your documentation does not live in a Git repository.
+- You need a static-site generator, CMS, or website host.
+- You need a source code review product for application code rather than documentation.
 
 ## Related pages
 
 - [Introduction to DraftView](introduction)
+- [Quickstart](../get-started/quickstart)
 - [See how DraftView compares](https://www.draftview.app/compare)
-- [Review AI-generated documentation PRs](../workflows/review-ai-generated-doc-prs)
 - [Set up your team](../collaboration/set-up-your-team)
 - [Move from GitHub PR review](../migration/from-github-pr-review)

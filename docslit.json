@@ -6,7 +6,7 @@
   "head": [
     "<link rel=\"apple-touch-icon\" href=\"/logo.png\">"
   ],
-  "description": "The human review layer for AI-generated docs. Review documentation PRs visually on top of GitHub.",
+  "description": "The missing review layer for GitHub. The collaborative layer for all the docs in your Git workflow.",
   "editUrl": "https://www.draftview.app/edit?url=https://github.com/gaurav-nelson/draftview-docs/blob/main/docs",
   "navbar": {
     "links": [
@@ -52,6 +52,7 @@
       "group": "Start here",
       "pages": [
         "overview/introduction",
+        "get-started/quickstart",
         "workflows/review-ai-generated-doc-prs",
         "get-started/try-without-an-account",
         "get-started/review-your-first-pr",

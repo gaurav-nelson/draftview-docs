@@ -39,7 +39,7 @@ DraftView supports common docs component syntax in supported files, including MD
 ### Mermaid diagrams
 
 - Code blocks tagged `mermaid` render as visual SVG diagrams in both the review surface and the editor.
-- Diagrams dynamically adapt to the active theme (System, Light, or Dark).
+- Diagrams adapt to your active theme (System, Light, or Dark).
 - In the visual editor, you can edit the diagram definition directly and preview the updated diagram live.
 
 ### Images

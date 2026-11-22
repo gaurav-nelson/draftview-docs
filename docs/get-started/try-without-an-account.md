@@ -1,21 +1,21 @@
 ---
 title: Try DraftView without an account
-description: Test the human review layer for AI-generated docs on any public PR with no sign-in.
+description: Test DraftView on any public GitHub pull request with no login, no card, and no setup.
 tag: Get started
 readtime: 3 min read
 ---
 
 # Try DraftView without an account
 
-Use the public demo to test the core DraftView use case on public GitHub pull requests.
+Use the public demo to test the DraftView review experience on any public GitHub pull request.
 
 ## What you can do in the demo
 
-- Load a public PR
-- Read changed docs in the visual review surface
+- Load any public documentation PR
+- Read changed docs on a rendered visual surface
 - See the PR's existing review threads next to the text they discuss, and try replying to them
 - Add comments and suggested edits in the demo experience
-- Simulate the human checkpoint before merge
+- Experience how cross-functional reviewers interact with documentation before merge
 
 ## What the demo does not do
 

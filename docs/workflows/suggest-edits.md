@@ -45,7 +45,7 @@ Submit your review. DraftView posts suggestions and comments to the PR.
 - On public repositories, you can submit reviews under your own GitHub account without requiring the DraftView GitHub App installed on the repo.
 - Magic-link reviewers create pending team feedback.
 - A GitHub-linked teammate can verify and push pending feedback.
-- DraftView preserves the original formatting of untouched blocks, ensuring your pull request diff contains only the exact edits you made.
+- DraftView preserves the original formatting of untouched blocks, so your pull request diff contains only the exact changes you made.
 
 ## Work with lists
 

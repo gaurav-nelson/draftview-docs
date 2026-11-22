@@ -1,24 +1,24 @@
 ---
 title: How DraftView works
-description: Learn the review lifecycle, queue behavior, and GitHub handoff model in DraftView.
+description: Learn the collaborative review lifecycle, queue behavior, and GitHub handoff model in DraftView.
 tag: Overview
 readtime: 7 min read
 ---
 
 # How DraftView works
 
-DraftView runs a human-in-the-loop review process for AI-generated documentation pull requests on top of GitHub.
+DraftView is the collaborative review layer for all the docs in your Git workflow. Engineers stay in the pull request. Everyone else reviews the rendered page.
 
-## The AI review loop
+## The collaborative review loop
 
-1. AI or a teammate opens a documentation pull request.
-2. DraftView ingests the PR into a queue.
-3. A human reviewer reads, comments, and edits in a visual review surface.
-4. DraftView syncs that feedback to GitHub.
-5. AI pushes an updated commit.
-6. Reviewer verifies whether that commit addressed the original feedback region.
-7. Maintainer or admin signs off.
-8. Team merges in GitHub.
+1. An engineer, technical writer, or AI assistant opens a documentation pull request.
+2. DraftView ingests the PR into your team's review queue.
+3. Reviewers read, comment, and suggest edits on a rendered visual surface.
+4. Feedback syncs directly to GitHub as comments and suggestions.
+5. The author updates the branch with revisions.
+6. Reviewers verify updates on the rendered page and resolve threads.
+7. A maintainer or admin signs off on the review.
+8. The team merges in GitHub.
 
 ## Team queue lifecycle
 
