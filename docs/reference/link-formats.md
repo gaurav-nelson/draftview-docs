@@ -51,6 +51,30 @@ GitLab:
 https://www.draftview.app/edit?url=https://gitlab.com/<group-or-namespace>/<project>/-/blob/<branch-or-sha>/<path>
 ```
 
+### Scratch editor and local files
+
+Open the file editor directly:
+
+```text
+https://www.draftview.app/edit
+```
+
+Start a new scratch document:
+
+```text
+https://www.draftview.app/edit?new=md
+https://www.draftview.app/edit?new=mdx
+https://www.draftview.app/edit?new=adoc
+```
+
+Open a sample document:
+
+```text
+https://www.draftview.app/edit?sample=markdown
+https://www.draftview.app/edit?sample=mdx
+https://www.draftview.app/edit?sample=asciidoc
+```
+
 ### External review route
 
 ```text

@@ -51,6 +51,20 @@ Two per-review settings switch capabilities off for everyone. **Allow comments**
 
 Only members of your organization can open a doc review.
 
+## External reviewer roles and policy
+
+When sharing an external review link for a PR, you assign a role to that link:
+
+- **Viewer**: Read-only access to the document snapshot without access to comment threads.
+- **Commenter**: Can read the document and participate in shared comment threads.
+- **Editor**: Can read, comment, and propose suggested edits.
+
+Admins can customize the external reviewer policy under **Roles & access → External reviewers**:
+
+- **Team comments visibility**: Choose whether external reviewers see **None**, **Own** (only threads they started), or **All** team comments.
+- **Team member names**: Choose how internal reviewer names appear to outside reviewers (**Anonymous**, **First name**, or **Full name**).
+- **Max delegation**: Limit the highest role an external review link can grant.
+
 ## Legacy naming
 
 If you used older docs, role names mapped as follows:

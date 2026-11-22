@@ -43,8 +43,15 @@ DraftView verifies the link at request time and re-checks it periodically. The l
 - Active links per repository: 10
 - Max submissions per link: 1 to 10
 - Expiration choices: 3, 7, 14, 30 days
+- Roles: Viewer, Commenter, or Editor
 
 External links always review a frozen snapshot of the PR.
+
+## File editor and scratch limits
+
+- Files opened from your computer are capped at 512 KB.
+- Local files and scratch documents stay entirely in your browser's local storage and are never uploaded to a server.
+- Unsafe link schemes (such as `javascript:` or `data:`) in opened files cannot be followed.
 
 ## Doc review limits
 
@@ -63,8 +70,9 @@ External links always review a frozen snapshot of the PR.
 
 ## Identity and push limits
 
-- Posting suggestions to GitHub requires a GitHub identity with PR access
-- Magic-link reviewers can review, but a GitHub-linked teammate must verify and push
+- On public repositories, any signed-in reviewer with a GitHub account can post review comments and suggestions directly without an app installed on the repo.
+- On private repositories, posting requires the DraftView GitHub App installed on the repository.
+- Magic-link reviewers can review, but a GitHub-linked teammate must verify and push.
 
 ## Related pages
 

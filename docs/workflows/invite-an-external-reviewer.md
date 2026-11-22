@@ -26,7 +26,7 @@ Open the target PR in DraftView.
 </wc-step>
 <wc-step title="Create an external review link">
 
-Create a link from the review surface or dashboard. Choose expiration and max submissions.
+Select **Share** in the top bar of the review or choose **Share** from the review's menu on the dashboard. Choose a role for the link (**Viewer**, **Commenter**, or **Editor**), and set an expiration period and submission limit.
 
 </wc-step>
 <wc-step title="Share the link and password">
@@ -48,10 +48,15 @@ A GitHub-linked teammate verifies the submission and pushes it to GitHub.
 
 ## Link behavior and limits
 
-- Links review a frozen snapshot.
+- Links review a frozen snapshot of the PR.
+- Each link carries a role:
+  - **Viewer**: Can read the document snapshot (cannot view comments or make edits).
+  - **Commenter**: Can read the document and participate in shared comment threads.
+  - **Editor**: Can read, comment, and suggest edits.
 - Max submissions per link: 1 to 10.
 - Expiration choices: 3, 7, 14, or 30 days.
 - Active links per repository: 10.
+- Organization admins can configure whether external reviewers see team comments or reviewer names under **Roles & access**.
 
 If the PR updates after link creation, DraftView shows a staleness notice. Create a new link for the next round.
 

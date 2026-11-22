@@ -42,12 +42,24 @@ Submit your review. DraftView posts suggestions and comments to the PR.
 ## What happens on submit
 
 - GitHub-linked reviewers post directly to GitHub.
+- On public repositories, you can submit reviews under your own GitHub account without requiring the DraftView GitHub App installed on the repo.
 - Magic-link reviewers create pending team feedback.
 - A GitHub-linked teammate can verify and push pending feedback.
+- DraftView preserves the original formatting of untouched blocks, ensuring your pull request diff contains only the exact edits you made.
 
 ## Work with lists
 
-To indent a list item, press Tab or select **Indent** in the toolbar. To outdent it, press Shift+Tab or select **Outdent**. These controls work in every DraftView editor.
+To indent a list item, press Tab or select **Indent** in the toolbar. To outdent it, press Shift+Tab or select **Outdent**. These controls work in every DraftView editor. When reviewing changes to lists, DraftView highlights only the specific list items that changed rather than highlighting the entire list.
+
+## Work with Mermaid diagrams
+
+- Code blocks tagged `mermaid` render as graphical diagrams directly in the editor and review canvas.
+- Select a Mermaid diagram block in the editor to edit its diagram definition. The diagram updates its visual preview live as you type.
+- Diagram lines adapt automatically to light and dark themes.
+
+## Work with source-only files
+
+When a document has no visual prose (such as an attribute file or metadata document), DraftView displays it in a line-numbered source view. You can edit lines directly, and DraftView turns your edits into precise suggestions on those lines.
 
 ## Work with images
 

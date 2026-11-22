@@ -43,7 +43,7 @@ Before you turn the gate off, remove the `draftview/human-review` check from bra
 
 The oversight report shows how much human review your AI-generated doc PRs and doc reviews actually got. It's part of the Governance plan. DraftView records the data on every plan, so when you upgrade, the report covers your full history.
 
-To open it, go to the **Organization** tab in the [dashboard](https://www.draftview.app/dashboard) and select **Oversight**. Only maintainers and admins see this tab. Use **Period** to pick the last 30 days, the last 90 days (the default), the last 12 months, or all time.
+To open it, go to **Insights** in the main sidebar of the [dashboard](https://www.draftview.app/dashboard). Only maintainers and admins see this page. Use **Period** to pick the last 30 days, the last 90 days (the default), the last 12 months, or all time.
 
 The **AI pull requests** section shows:
 
@@ -73,7 +73,7 @@ Maintainers and admins can export these records:
 | Pull request oversight record (JSON) | The download icon on a signed-off or merged item in the **Queue** | Governance |
 | Doc review audit record (JSON) | **Record** next to a review in **Recent doc reviews**, or **Audit record (JSON)** in a review's **Record** dialog | Governance |
 | Doc review record (Markdown) | **.md** next to a review in **Recent doc reviews**, or **Download .md** in a review's **Record** dialog | Every plan |
-| Oversight ledger (CSV or JSON) | **Oversight ledger (CSV)** or **Sealed ledger (JSON)** in the **Oversight** tab | Governance |
+| Oversight ledger (CSV or JSON) | **Oversight ledger (CSV)** or **Sealed ledger (JSON)** in **Insights** | Governance |
 
 The pull request record covers who reviewed, time spent, edits, and sign-off. The doc review audit record covers the reviewed files and their content hashes, each participant and their role, every thread, every edit with its outcome and who decided it, and the full event log. The Markdown record is the same record that **Finish** commits to the pull request, and you can download it while the review is still open.
 
@@ -83,7 +83,7 @@ The ledger has one row for every queue PR and every doc review in the selected p
 
 DraftView seals every JSON record it exports. The seal holds only if your organization exported the file and nobody changed it afterward.
 
-To check a file that someone sends you, open the **Oversight** tab, find **Verify a record**, and select **Choose a record**. DraftView checks the file on the server and doesn't store it. A valid file shows **Seal verified. This record is unchanged.** and the time it was sealed.
+To check a file that someone sends you, open **Insights** in the sidebar, find **Verify a record**, and select **Choose a record**. DraftView checks the file on the server and doesn't store it. A valid file shows **Seal verified. This record is unchanged.** and the time it was sealed.
 
 ## Compliance alerts
 

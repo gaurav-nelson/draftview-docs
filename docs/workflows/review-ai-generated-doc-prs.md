@@ -27,7 +27,7 @@ Use this workflow to put a human checkpoint on AI-generated docs PRs before they
 <wc-steps>
 <wc-step title="Open queue items that need human review">
 
-Filter queue items by state and authorship, then open items in New, In review, Addressed, or Ready to merge.
+In the [dashboard](https://www.draftview.app/dashboard), review your items across three tabs: **Needs you** (items waiting on your review, revision check, or decision), **Open**, and **Done**. Filter by repository, author, or review type.
 
 </wc-step>
 <wc-step title="Review and request changes">

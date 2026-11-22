@@ -29,6 +29,18 @@ Effective permission is the lower of the role capability and the item cap.
 
 In a doc review, Curate queue covers starting the review, managing its files and settings, and accepting or rejecting edits. Sign off covers finishing the review.
 
+## External review link roles
+
+External reviewers accessing a pull request via a share link can be assigned one of three roles:
+
+| Link role | View document | View team comments | Add comments | Suggest edits |
+|---|---|---|---|---|
+| Viewer | Yes | No | No | No |
+| Commenter | Yes | Policy-dependent | Yes | No |
+| Editor | Yes | Policy-dependent | Yes | Yes |
+
+Admins manage comment visibility and reviewer name privacy in **Roles & access → External reviewers**.
+
 ## Legacy mapping
 
 - Owner -> Admin

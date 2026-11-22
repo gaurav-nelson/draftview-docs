@@ -45,6 +45,14 @@ DraftView renders comments as GitHub-flavored Markdown, so your comment looks th
 
 Comments from GitHub, including review bots, render the same way. DraftView keeps the inline HTML that GitHub allows, such as badges and collapsible `<details>` sections, and removes scripts, styles, and other unsafe markup.
 
+## Comment on source-only files
+
+When a reviewed file has no visual prose (such as an AsciiDoc attribute file or configuration document), DraftView displays it in a line-numbered source view. You can select individual line numbers or text on any line to comment directly on it.
+
+## Modified file notice
+
+If a file in the pull request has modifications that cannot be displayed visually, DraftView shows a notice at the top of the file with a link to GitHub's file view so you can inspect the full change.
+
 ## Reply to existing threads
 
 DraftView shows the PR's existing GitHub review threads next to the text they discuss. Select **Reply** to answer a thread, or **Resolve** to close it. To open a resolved thread again, select **Reopen**.

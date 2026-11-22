@@ -53,7 +53,7 @@ Before you start:
 <wc-steps>
 <wc-step title="Open the chooser">
 
-In the [dashboard](https://www.draftview.app/dashboard), go to the Queue and select **Add to team queue**. Then select **Doc review**.
+In the [dashboard](https://www.draftview.app/dashboard), select **New review** and choose **Doc review**.
 
 </wc-step>
 <wc-step title="Pick the repository and branch">

@@ -52,6 +52,16 @@ Open a page, click Edit this page, edit, and confirm DraftView opens a pull requ
 </wc-step>
 </wc-steps>
 
+## Open and edit files in DraftView
+
+You can also use the DraftView file editor directly at [https://www.draftview.app/edit](https://www.draftview.app/edit) without a docs site link. The entry screen offers three equal doors:
+
+- **New file**: Start a blank scratch document in Markdown, MDX, or AsciiDoc. Includes starter content, a format switcher, and instant **Download** or **Copy source** buttons. Your scratch draft stays safely in your browser.
+- **From your computer**: Select or drag-and-drop any Markdown, MDX, or AsciiDoc file (up to 512 KB) to edit locally in your browser. Files remain entirely in your browser's local storage and are never uploaded to a server.
+- **From GitHub or GitLab**: Paste any public or private repository file URL to open and edit it visually.
+
+You can also open format-matched sample documents using **Open a sample** to try out the editor.
+
 ## Notes
 
 - DraftView works with Markdown, MDX, and AsciiDoc.

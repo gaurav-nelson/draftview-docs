@@ -58,11 +58,12 @@ All org settings live in the **Organization** tab of the [dashboard](https://www
 | Tab | What it covers | Who sees it |
 |---|---|---|
 | **Members** | Members and their roles, invitations, and pending invites | Everyone |
-| **Roles & access** | What each role can do, access for new PRs, PRs from other repositories, and allowed email domains for invites | Everyone. Only admins can change settings. |
+| **Roles & access** | What each role can do, access for new PRs, external reviewer policies, PRs from other repositories, and allowed email domains | Everyone. Only admins can change settings. |
 | **GitHub** | The GitHub App connection, the human-review merge gate, and [doc review](configure-doc-reviews) settings per repository | Everyone. Only admins can change settings. |
 | **Notifications** | Slack, a custom webhook, and which events to send | Admins |
 | **Billing** | Your plan, usage, and the open-source grant | Everyone |
-| **Oversight** | The [oversight report](sign-off-and-oversight#oversight-report), record exports, and record verification | Maintainers and admins |
+
+Team oversight reports, audit records, and verification tools are located under **Insights** in the main sidebar.
 
 DraftView reopens the tab you used last. If the GitHub App isn't connected yet, admins land on **GitHub**.
 

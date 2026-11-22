@@ -36,6 +36,12 @@ DraftView supports common docs component syntax in supported files, including MD
 - Tags such as `{% callout %}` and `{% tabs %}` render as rich components with editable bodies.
 - DraftView preserves self-closing tags, such as `{% partial /%}`, verbatim.
 
+### Mermaid diagrams
+
+- Code blocks tagged `mermaid` render as visual SVG diagrams in both the review surface and the editor.
+- Diagrams dynamically adapt to the active theme (System, Light, or Dark).
+- In the visual editor, you can edit the diagram definition directly and preview the updated diagram live.
+
 ### Images
 
 - Markdown, MDX, and AsciiDoc images render inline in the editor, including images referenced by relative paths in the repository.
@@ -50,11 +56,20 @@ DraftView keeps source format on submit.
 - MDX edits return as MDX.
 - AsciiDoc edits return as AsciiDoc.
 - MyST and Markdoc edits return in their own syntax, including directive options and tag attributes.
+- Untouched blocks keep their original source formatting verbatim, so suggestions submit only what you changed without adding formatting noise.
+
+## Source-only files
+
+Files that do not contain visual prose (such as AsciiDoc files containing only attribute entries and comments, or metadata and configuration documents) open in a line-numbered source view.
+
+- Added lines are tinted and removed lines are struck through.
+- Reviewers can comment on individual lines and suggest edits line by line.
+- Suggested edits submit cleanly to GitHub as suggestions on the edited lines.
 
 ## Not supported
 
-- Code and config files for prose editing
 - Binary documents and image formats as editable prose
+- Full source code repositories for general code review (DraftView is designed specifically for documentation files and docs-as-code assets)
 
 ## Related pages
 

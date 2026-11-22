@@ -14,7 +14,8 @@ This walkthrough covers one end-to-end docs review with the same human checkpoin
 - You can sign in to DraftView.
 - You have access to the target PR in GitHub.
 - The PR changes supported doc file formats.
-- To submit your review, the DraftView GitHub App is installed on the repository. Public PRs open without the app, so you can read and draft feedback first and install the app before you submit. Private repositories need the app to open at all.
+- For public repositories, you can read, draft feedback, and submit your review right away using your GitHub account—no app installation is required on the repository.
+- For private repositories, the DraftView GitHub App must be installed on the repository.
 
 ## Steps
 
@@ -42,7 +43,9 @@ Read the rendered docs in the center pane. Move between files in the file list, 
 
 Submit comments and suggested edits. DraftView maps your feedback to the PR in GitHub.
 
-If the app isn't installed on the repository, DraftView shows a banner with an install link. Your drafts stay saved while you install it, and DraftView detects the install when you come back.
+On public repositories, DraftView asks you to authorize posting with your GitHub account, and your review submits immediately under your name.
+
+For private repositories, if the app isn't installed on the repository yet, DraftView shows an install link. Your drafts stay saved while you install it.
 
 </wc-step>
 <wc-step title="Verify follow-up commits">

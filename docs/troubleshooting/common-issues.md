@@ -37,14 +37,49 @@ Public PRs open without the app. You need the app only to submit your review.
 
 ## I cannot submit my review
 
-Cause:
+Possible causes:
 
-- The DraftView GitHub App isn't installed on the repository
+- For a private repository, the DraftView GitHub App isn't installed on the repository.
+- For a public repository, you need to authorize DraftView to post using your GitHub account.
 
 Fix:
 
-- Select the install link in the review banner. Your drafts stay saved, and you can submit after the install finishes.
+- On a public repository, select the **Allow posting** button to authorize posting with your GitHub account.
+- On a private repository, select the install link in the review banner to install the DraftView GitHub App. Your drafts stay saved while you install it.
 - If the PR comes from your fork, install the app on your fork, not on the upstream repository.
+
+## A modified file has no marked changes
+
+Cause:
+
+- The file changes might not contain visual prose modifications (e.g. metadata-only updates or whitespace changes).
+
+Fix:
+
+- DraftView displays a notice above the document with a link to GitHub's file view so you can inspect the changes directly in GitHub.
+
+## An external reviewer cannot see comments
+
+Possible causes:
+
+- The external review link was created with the **Viewer** role.
+- Your organization's external reviewer policy sets team comments visibility to **None**.
+
+Fix:
+
+- Create a new link with the **Commenter** or **Editor** role.
+- Have an admin check **Roles & access → External reviewers** to confirm that team comments visibility is set to **Own** or **All**.
+
+## A local file fails to open in the editor
+
+Possible causes:
+
+- The file exceeds the 512 KB size limit.
+- The file format is not Markdown, MDX, or AsciiDoc.
+
+Fix:
+
+- Confirm the file is under 512 KB and uses a supported extension (.md, .mdx, .adoc).
 
 ## I see a "Something went wrong" page
 

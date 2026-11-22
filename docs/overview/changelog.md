@@ -9,6 +9,20 @@ readtime: 7 min read
 
 Significant DraftView updates, grouped by month.
 
+## November 2026
+
+- **Render and edit Mermaid diagrams**: Mermaid diagram blocks (` ```mermaid `) render as graphical diagrams in both the review surface and the visual editor. You can edit diagram code directly in DraftView and see changes update live. Diagrams automatically match your active theme (System, Light, or Dark). See [Supported file formats](../reference/supported-file-formats#mermaid-diagrams).
+- **Review and edit source-only files**: Files that contain no visual prose (such as metadata-only AsciiDoc files or configuration documents) open in a line-numbered source view with added and deleted lines highlighted. You can leave comments and suggest edits on individual lines just like in visual documents. See [Supported file formats](../reference/supported-file-formats#source-only-files).
+- **Post reviews to any public PR without app installation**: Reviewers signed in with GitHub can now submit comments and suggested edits directly to any public GitHub pull request. You no longer need the repository owner to install the DraftView GitHub App first. Private repositories still require the app. See [Review your first pull request](../get-started/review-your-first-pr).
+- **Scratch mode and local files in the editor**: The `/edit` screen now offers three equal doors: start a blank scratch file in Markdown, MDX, or AsciiDoc, open or drop a file from your computer (up to 512 KB) to edit locally in your browser, or open a file from GitHub or GitLab. Starter files include format-matched samples and quick download and copy controls. See [Edit files in DraftView](../workflows/edit-this-page#open-and-edit-files-in-draftview).
+- **Cleaner suggestions and untouched section preservation**: When you submit edits, DraftView keeps the untouched sections of your document in their original format and only submits the specific blocks you changed. Suggestions avoid introducing formatting noise into your pull requests.
+- **Focused list and container highlights**: Editing a list item, blockquote, or callout highlights only the specific item or line changed rather than highlighting the entire block.
+- **Modified file diff notice**: When a modified file has changes that cannot be displayed visually, DraftView shows a notice above the document with a direct link to GitHub's file view.
+- **Unified Reviews home**: The dashboard now groups all reviews into a single home with three focused tabs: **Needs you** (with clear reasons for items awaiting your action), **Open**, and **Done**. Merged pull requests move to Done automatically, and you can remove your own finished reviews.
+- **Dedicated Insights navigation**: Team oversight reports and audit records now live under **Insights** in the main sidebar. See [Sign-off and oversight](../collaboration/sign-off-and-oversight).
+- **Roles for external review links**: When creating a share link for external stakeholders, you can set their role to **Viewer**, **Commenter**, or **Editor**. Admins can also configure whether external reviewers see team comments or teammate names under **Roles & access**. See [Invite an external reviewer](../workflows/invite-an-external-reviewer).
+- **Theme switch across all screens**: Easily toggle between System, Light, and Dark mode using the theme button in the top bar of every screen.
+
 ## October 2026
 
 - Reorganized Organization settings into six tabs: **Members**, **Roles & access**, **GitHub**, **Notifications**, **Billing**, and **Oversight**. **Roles & access** shows what each role can do and gathers every permission setting in one place. See [Set up your team](../collaboration/set-up-your-team#organization-settings).
