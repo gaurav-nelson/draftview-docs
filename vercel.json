@@ -13,6 +13,16 @@
       "permanent": true
     },
     {
+      "source": "/:from(overview|get-started|workflows|send-to-github|collaboration|migration|reference|troubleshooting)/:section(overview|get-started|workflows|send-to-github|collaboration|migration|reference|troubleshooting)/:page",
+      "destination": "/:section/:page",
+      "permanent": true
+    },
+    {
+      "source": "/:page(introduction|who-its-for|how-it-works|changelog)",
+      "destination": "/overview/:page",
+      "permanent": true
+    },
+    {
       "source": "/docs/llms.txt",
       "destination": "/llms.txt",
       "permanent": true
