@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "docslit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "docslit",
+        "mcp"
+      ]
+    }
+  }
+}

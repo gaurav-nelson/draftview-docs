@@ -13,12 +13,16 @@
     "border": "#e6e6e4",
     "border2": "#d8d8d6",
     "text": "#0a0a0a",
-    "sidebarBg": "#fafafa"
+    "sidebarBg": "#fafafa",
+    "accentLight": "#c2410c"
   },
   "fonts": {
     "sans": "'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     "mono": "'JetBrains Mono', 'Fira Code', monospace",
     "radius": "8px",
     "radiusLg": "16px"
+  },
+  "dark": {
+    "text3": "#7c7c7c"
   }
 }

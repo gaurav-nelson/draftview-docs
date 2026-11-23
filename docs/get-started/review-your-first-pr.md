@@ -22,7 +22,7 @@ This walkthrough covers one end-to-end docs review with the same human checkpoin
 <wc-steps>
 <wc-step title="Sign in">
 
-Sign in at [https://www.draftview.app/login](https://www.draftview.app/login).
+Sign in on the [DraftView sign-in page](https://www.draftview.app/login).
 
 </wc-step>
 <wc-step title="Open a PR">

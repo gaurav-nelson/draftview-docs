@@ -8,7 +8,8 @@ Built with [docslit-cli](https://github.com/UmbrellaDocs/docslit-cli).
 
 ```bash
 npm install
-npm run validate     # check links, assets, and frontmatter
+npm run validate     # check links, assets, frontmatter, and theme contrast
+npm run lint         # check docs quality (link text, headings, descriptions)
 npm run dev          # preview at http://localhost:3000
 npm run build        # build the static site to dist/
 ```
@@ -26,3 +27,10 @@ matching file.
 
 Hosted on Vercel. Framework preset Other, build command `npm run build`,
 output directory `dist`. The domain docs.draftview.app points at this project.
+
+## AI agents
+
+`AGENTS.md` (loaded by `CLAUDE.md`) tells AI coding agents how to write pages
+for this site, and `.mcp.json` connects them to the DocsLit MCP server. The
+authoring skills live in `.claude/skills/`. Regenerate these files after a
+DocsLit upgrade with `npx docslit agents init --force`.

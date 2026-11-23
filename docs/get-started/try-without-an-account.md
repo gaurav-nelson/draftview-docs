@@ -33,7 +33,7 @@ DraftView keeps the comments and edits you make in the demo for 48 hours in your
 <wc-steps>
 <wc-step title="Open the demo page">
 
-Go to [https://www.draftview.app/try](https://www.draftview.app/try).
+Go to the [DraftView demo page](https://www.draftview.app/try).
 
 </wc-step>
 <wc-step title="Paste a public PR URL">
