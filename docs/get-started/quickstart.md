@@ -21,7 +21,7 @@ If you have a personal GitHub account, you can use DraftView right away on publi
 
 Review documentation changes as formatted pages rather than raw markup or Git diffs.
 
-- **Open any public PR**: Enter any public PR URL at [https://www.draftview.app/try](https://www.draftview.app/try) or use direct URLs (`https://www.draftview.app/github.com/owner/repo/pull/123`).
+- **Open any public PR**: Enter any public PR URL on the [DraftView demo page](https://www.draftview.app/try) or use direct URLs (`https://www.draftview.app/github.com/owner/repo/pull/123`).
 - **See the page, not the markup**: Markdown, MDX, and AsciiDoc render with tables, callouts, and Mermaid diagrams intact.
 - **Comment and propose edits**: Highlight text to leave inline comments, or type directly in the rendered page to suggest edits.
 - **Submit directly to GitHub**: Sign in with GitHub and authorize posting. Your review comments and suggestions post directly to the GitHub PR under your personal account.
@@ -32,7 +32,7 @@ See [Review your first pull request](review-your-first-pr) and [Comment on a pul
 
 Edit documentation visually and submit changes without cloning repositories or configuring local environments.
 
-- **Open any file**: Go to [https://www.draftview.app/edit](https://www.draftview.app/edit) and paste a file URL from GitHub or GitLab.
+- **Open any file**: Go to the [DraftView file editor](https://www.draftview.app/edit) and paste a file URL from GitHub or GitLab.
 - **Visual editing**: Edit Markdown, MDX, or AsciiDoc with full formatting controls, image tools, and diagram support.
 - **Submit as a PR**: DraftView guides you through creating a fork, committing your changes, and opening a new pull request directly on GitHub.
 - **Scratch drafts and local files**: You can also start a new blank document or drag-and-drop a file from your computer (up to 512 KB) to edit locally in your browser without touching GitHub.

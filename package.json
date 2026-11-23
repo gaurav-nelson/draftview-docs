@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "docslit dev",
     "build": "docslit build",
-    "validate": "docslit validate"
+    "validate": "docslit validate",
+    "lint": "docslit lint"
   },
   "devDependencies": {
-    "docslit": "^0.1.11",
+    "docslit": "^0.2.0",
     "esbuild": "0.28.1"
   }
 }
